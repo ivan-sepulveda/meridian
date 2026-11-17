@@ -17,7 +17,7 @@ const HEIGHT = 500;
 
 type CountryFeature = Feature<Geometry, { name: string }> & { key: string };
 
-type TradeSource = { year: number; source: string };
+type TradeSource = { year: number; source: string; services: string };
 
 type Hover = {
   kind: "country" | "city";
@@ -41,6 +41,7 @@ export default function WorldMap() {
   const [trade, setTrade] = useState<TradeSource | null>(null);
   const [cities, setCities] = useState<City[]>([]);
   const [showCities, setShowCities] = useState(false);
+  const [shadeBy, setShadeBy] = useState<ShadeMetric>("gdpPerCapita");
 
   const svgRef = useRef<SVGSVGElement>(null);
   const gRef = useRef<SVGGElement>(null);
@@ -54,7 +55,7 @@ export default function WorldMap() {
       import("world-atlas/countries-50m.json"),
       fetch("/api/countries").then((r) => {
         if (!r.ok) throw new Error(`API ${r.status}`);
-        return r.json() as Promise<{ countries: Country[]; trade: TradeSource }>;
+        return r.json() as Promise<{ countries: Country[]; trade: Omit<TradeSource, "services">; services: string }>;
       }),
       fetch("/api/cities").then((r) => {
         if (!r.ok) throw new Error(`API ${r.status}`);
@@ -70,7 +71,7 @@ export default function WorldMap() {
         const keys = countryKeys(fc.features.map((f) => ({ id: f.id, name: f.properties.name })));
         setFeatures(fc.features.map((f, i) => ({ ...f, key: keys[i] })));
         setCountries(Object.fromEntries(data.countries.map((c) => [c.id, c])));
-        setTrade(data.trade);
+        setTrade({ ...data.trade, services: data.services });
         setCities(cityData.cities);
       })
       .catch((e) => !cancelled && setError(String(e)));
@@ -134,7 +135,7 @@ export default function WorldMap() {
     if (!rect) return;
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
-    setHover({ kind, key, x, y, flipX: x > rect.width - 180, flipY: y > rect.height - 110 });
+    setHover({ kind, key, x, y, flipX: x > rect.width / 2, flipY: y > rect.height / 2 });
   };
 
   const hovered = hover?.kind === "country" ? countries[hover.key] : undefined;
@@ -143,89 +144,91 @@ export default function WorldMap() {
 
   return (
     <div className="flex w-full flex-1 flex-col gap-4 lg:flex-row">
-      <div
-        ref={wrapRef}
-        className="relative w-full self-start overflow-hidden rounded-xl lg:flex-1 border border-[var(--border)] bg-[var(--ocean)]"
-      >
-        <svg
-          ref={svgRef}
-          viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
-          className="world-map block h-auto w-full cursor-grab touch-none active:cursor-grabbing"
-          data-labels="off"
-          role="img"
-          aria-label="World map"
-          onClick={() => setSelected(null)}
-        >
-          <g ref={gRef}>
-            <path d={path({ type: "Sphere" }) ?? ""} fill="var(--ocean)" />
-            <path
-              d={path(geoGraticule10()) ?? ""}
-              fill="none"
-              stroke="var(--graticule)"
-              strokeWidth={0.5}
-              vectorEffect="non-scaling-stroke"
-            />
-            {features.map((f, i) => {
-              const c = countries[f.key];
-              const isSel = f.key === selected;
-              const isHover = hover?.kind === "country" && f.key === hover.key;
-              const share = c?.stats.topExport?.share;
-              return (
-                <path
-                  key={f.key}
-                  d={countryPaths[i]}
-                  fill={
-                    isSel ? "var(--selected)" : share === undefined ? "var(--land)" : shareFill(share)
-                  }
-                  stroke={isHover || isSel ? "var(--foreground)" : "var(--border-country)"}
-                  strokeWidth={isHover || isSel ? 1.25 : 0.5}
-                  vectorEffect="non-scaling-stroke"
-                  className="cursor-pointer transition-[fill] duration-150"
-                  onPointerMove={(e) => onMove("country", f.key, e)}
-                  onPointerLeave={() => setHover(null)}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setSelected((s) => (s === f.key ? null : f.key));
-                  }}
-                >
-                  <title>{f.properties.name}</title>
-                </path>
-              );
-            })}
-            {showCities && (
-              <g aria-label="Largest cities and capitals">
-                {cities.map((city, i) => {
-                  const [x, y] = cityPoints[i];
-                  return (
-                    <g
-                      key={`${city.name}-${city.country}`}
-                      transform={`translate(${x},${y})`}
-                      className={`city ${city.capital ? "is-capital" : ""} ${city.largest ? "is-major" : ""}`}
-                      onPointerMove={(e) => onMove("city", String(i), e)}
-                      onPointerLeave={() => setHover(null)}
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      {/* Larger invisible target so small dots are easy to hover. */}
-                      <circle className="city-hit" />
-                      {city.capital && <circle className="city-ring" />}
-                      <circle className="city-dot" />
-                      <text className="city-label">{city.name}</text>
-                    </g>
-                  );
-                })}
-              </g>
-            )}
-          </g>
-        </svg>
+      {/* Outer box positions overlays; only the inner one clips, so tooltips and
+          the Options menu can extend past the map's edge. */}
+      <div ref={wrapRef} className="relative w-full self-start lg:flex-1">
+        <div className="overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--ocean)]">
+          <svg
+            ref={svgRef}
+            viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
+            className="world-map block h-auto w-full cursor-grab touch-none active:cursor-grabbing"
+            data-labels="off"
+            role="img"
+            aria-label="World map"
+            onClick={() => setSelected(null)}
+          >
+            <g ref={gRef}>
+              <path d={path({ type: "Sphere" }) ?? ""} fill="var(--ocean)" />
+              <path
+                d={path(geoGraticule10()) ?? ""}
+                fill="none"
+                stroke="var(--graticule)"
+                strokeWidth={0.5}
+                vectorEffect="non-scaling-stroke"
+              />
+              {features.map((f, i) => {
+                const c = countries[f.key];
+                const isSel = f.key === selected;
+                const isHover = hover?.kind === "country" && f.key === hover.key;
+                const metric = SHADE_METRICS[shadeBy];
+                const value = c ? metric.value(c) : null;
+                return (
+                  <path
+                    key={f.key}
+                    d={countryPaths[i]}
+                    fill={
+                      isSel ? "var(--selected)" : value == null ? "var(--land)" : metricFill(metric, value)
+                    }
+                    stroke={isHover || isSel ? "var(--foreground)" : "var(--border-country)"}
+                    strokeWidth={isHover || isSel ? 1.25 : 0.5}
+                    vectorEffect="non-scaling-stroke"
+                    className="cursor-pointer transition-[fill] duration-150"
+                    onPointerMove={(e) => onMove("country", f.key, e)}
+                    onPointerLeave={() => setHover(null)}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setSelected((s) => (s === f.key ? null : f.key));
+                    }}
+                  >
+                    <title>{f.properties.name}</title>
+                  </path>
+                );
+              })}
+              {showCities && (
+                <g aria-label="Largest cities and capitals">
+                  {cities.map((city, i) => {
+                    const [x, y] = cityPoints[i];
+                    return (
+                      <g
+                        key={`${city.name}-${city.country}`}
+                        transform={`translate(${x},${y})`}
+                        className={`city ${city.capital ? "is-capital" : ""} ${city.largest ? "is-major" : ""}`}
+                        onPointerMove={(e) => onMove("city", String(i), e)}
+                        onPointerLeave={() => setHover(null)}
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        {/* Larger invisible target so small dots are easy to hover. */}
+                        <circle className="city-hit" />
+                        {city.capital && <circle className="city-ring" />}
+                        <circle className="city-dot" />
+                        <text className="city-label">{city.name}</text>
+                      </g>
+                    );
+                  })}
+                </g>
+              )}
+            </g>
+          </svg>
 
-        {features.length === 0 && !error && (
-          <div className="absolute inset-0 grid place-items-center text-sm text-[var(--muted)]">
-            Loading map…
-          </div>
-        )}
-        {error && (
-          <div className="absolute inset-0 grid place-items-center text-sm text-red-500">{error}</div>
-        )}
+          {features.length === 0 && !error && (
+            <div className="absolute inset-0 grid place-items-center text-sm text-[var(--muted)]">
+              Loading map…
+            </div>
+          )}
+          {error && (
+            <div className="absolute inset-0 grid place-items-center text-sm text-red-500">{error}</div>
+          )}
+        </div>
 
         {hovered && hover && (
           <div
@@ -274,13 +277,15 @@ export default function WorldMap() {
           Reset view
         </button>
         <OptionsMenu
+          shadeBy={shadeBy}
+          onShadeByChange={setShadeBy}
           showCities={showCities}
           onShowCitiesChange={(on) => {
             setShowCities(on);
             if (!on) setHover((h) => (h?.kind === "city" ? null : h));
           }}
         />
-        <Legend />
+        <Legend metric={SHADE_METRICS[shadeBy]} />
       </div>
 
       <aside className="w-full shrink-0 rounded-xl border border-[var(--border)] bg-[var(--panel)] p-5 lg:w-72">
@@ -290,8 +295,14 @@ export default function WorldMap() {
             <h2 className="mb-4 text-xl font-semibold">{active.name}</h2>
             <StatRows country={active} large />
             <p className="mt-6 text-xs text-[var(--muted)]">
-              Trade: goods only{trade ? `, ${trade.year}, from ${trade.source}` : ""}. Note 3 is a
-              filler value.
+              Goods: {trade ? `${trade.year}, ${trade.source}` : "CEPII BACI"}. Services:{" "}
+              {trade?.services ?? "World Bank"}
+              {active.stats.servicesYear ? `, ${active.stats.servicesYear}` : ""}; categories are
+              broad, and software and film rights mostly fall under IP licensing. GDP per capita:
+              nominal US$, {active.stats.gdpPerCapita
+                ? `${active.stats.gdpPerCapita.source}${active.stats.gdpPerCapita.year ? ` ${active.stats.gdpPerCapita.year}` : ""}`
+                : "IMF / World Bank / UN"}{" "}
+              via Wikipedia. Note 3 is a filler value.
             </p>
           </>
         ) : (
@@ -305,25 +316,28 @@ export default function WorldMap() {
   );
 }
 
-function TradeValue({ product, of, large }: { product: TopProduct | null; of: string; large?: boolean }) {
-  if (!product) return <span className="text-[var(--muted)]">No data</span>;
+type Ranked = Pick<TopProduct, "label" | "share" | "valueUsd">;
+
+const noData = <span className="text-[var(--muted)]">No data</span>;
+
+/** "Crude oil (7%)"; the panel adds the dollar value underneath. */
+function TradeValue({ product, large }: { product: Ranked | null; large?: boolean }) {
+  if (!product) return noData;
   return (
     <>
-      {product.label}
-      {large && (
-        <div className="text-xs font-normal text-[var(--muted)]">
-          {formatShare(product.share)} of {of} · {formatUsd(product.valueUsd)}
-        </div>
-      )}
+      {product.label} <span className="text-[var(--muted)]">({formatShare(product.share)})</span>
+      {large && <div className="text-xs font-normal text-[var(--muted)]">{formatUsd(product.valueUsd)}</div>}
     </>
   );
 }
 
 function StatRows({ country, large }: { country: Country; large?: boolean }) {
-  const { topExport, topImport, note3 } = country.stats;
+  const { topExport, topImport, topService, gdpPerCapita, note3 } = country.stats;
   const rows: [string, React.ReactNode][] = [
-    ["Top Export", <TradeValue key="e" product={topExport} of="exports" large={large} />],
-    ["Top Import", <TradeValue key="i" product={topImport} of="imports" large={large} />],
+    ["Top goods export", <TradeValue key="e" product={topExport} large={large} />],
+    ["Top service export", <TradeValue key="s" product={topService} large={large} />],
+    ["Top goods import", <TradeValue key="i" product={topImport} large={large} />],
+    ["GDP per capita", gdpPerCapita ? `$${gdpPerCapita.usd.toLocaleString("en-US")}` : noData],
     ["Note 3", note3.toLocaleString()],
   ];
   return (
@@ -338,11 +352,40 @@ function StatRows({ country, large }: { country: Country; large?: boolean }) {
   );
 }
 
-// Shading: the top export's share of total exports. 60%+ is fully saturated;
-// few countries are above that, and those (mostly oil states) all read as "very dependent".
-const SHARE_MAX = 0.6;
-function shareFill(share: number) {
-  const pct = 15 + Math.min(share / SHARE_MAX, 1) * 70;
+// --- Shading. Each metric maps a country to a number, and a range to colour
+// between. Add entries here to offer more choices in Options.
+type ShadeMetricDef = {
+  label: string;
+  value: (c: Country) => number | null | undefined;
+  min: number;
+  max: number;
+  /** Log scale: equal steps for each 10x, so poor and rich countries both get contrast. */
+  log: boolean;
+  format: (n: number) => string;
+};
+
+const SHADE_METRICS = {
+  gdpPerCapita: {
+    label: "GDP per capita",
+    value: (c) => c.stats.gdpPerCapita?.usd,
+    min: 1_000,
+    max: 100_000,
+    log: true,
+    format: (n) => (n >= 1000 ? `$${Math.round(n / 1000)}K` : `$${n}`),
+  },
+} satisfies Record<string, ShadeMetricDef>;
+
+type ShadeMetric = keyof typeof SHADE_METRICS;
+
+function metricPosition(m: ShadeMetricDef, v: number) {
+  const t = m.log
+    ? (Math.log(Math.max(v, 1)) - Math.log(m.min)) / (Math.log(m.max) - Math.log(m.min))
+    : (v - m.min) / (m.max - m.min);
+  return Math.min(Math.max(t, 0), 1);
+}
+
+function metricFill(m: ShadeMetricDef, v: number) {
+  const pct = 15 + metricPosition(m, v) * 70;
   return `color-mix(in oklab, var(--accent) ${pct}%, var(--land))`;
 }
 
@@ -361,9 +404,13 @@ function formatUsd(usd: number) {
 }
 
 function OptionsMenu({
+  shadeBy,
+  onShadeByChange,
   showCities,
   onShowCitiesChange,
 }: {
+  shadeBy: ShadeMetric;
+  onShadeByChange: (m: ShadeMetric) => void;
   showCities: boolean;
   onShowCitiesChange: (on: boolean) => void;
 }) {
@@ -396,7 +443,21 @@ function OptionsMenu({
         Options
       </button>
       {open && (
-        <div className="absolute right-0 mt-1 w-max rounded-md border border-[var(--border)] bg-[var(--panel)] p-2 shadow-lg">
+        <div className="absolute right-0 mt-1 w-max space-y-1 rounded-md border border-[var(--border)] bg-[var(--panel)] p-2 shadow-lg">
+          <label className="flex flex-col gap-1 px-1.5 py-1">
+            <span className="text-[var(--muted)]">Shade countries by</span>
+            <select
+              value={shadeBy}
+              onChange={(e) => onShadeByChange(e.target.value as ShadeMetric)}
+              className="rounded border border-[var(--border)] bg-[var(--background)] px-1.5 py-1"
+            >
+              {(Object.keys(SHADE_METRICS) as ShadeMetric[]).map((m) => (
+                <option key={m} value={m}>
+                  {SHADE_METRICS[m].label}
+                </option>
+              ))}
+            </select>
+          </label>
           <label className="flex cursor-pointer items-center gap-2 rounded px-1.5 py-1 hover:bg-[var(--hover)]">
             <input
               type="checkbox"
@@ -412,20 +473,22 @@ function OptionsMenu({
   );
 }
 
-function Legend() {
+function Legend({ metric }: { metric: ShadeMetricDef }) {
+  // Middle tick at the scale's midpoint (for a log scale, the geometric mean).
+  const mid = metric.log ? Math.sqrt(metric.min * metric.max) : (metric.min + metric.max) / 2;
   return (
     <div className="absolute bottom-3 left-3 rounded-md border border-[var(--border)] bg-[var(--panel)] px-2.5 py-1.5 text-[10px] text-[var(--muted)]">
-      <div className="mb-1">Top export, share of all exports</div>
+      <div className="mb-1">{metric.label}</div>
       <div
-        className="h-2 w-28 rounded-sm"
+        className="h-2 w-32 rounded-sm"
         style={{
-          background:
-            `linear-gradient(to right, ${shareFill(0)}, ${shareFill(SHARE_MAX)})`,
+          background: `linear-gradient(to right, ${metricFill(metric, metric.min)}, ${metricFill(metric, metric.max)})`,
         }}
       />
       <div className="mt-0.5 flex justify-between tabular-nums">
-        <span>0%</span>
-        <span>{formatShare(SHARE_MAX)}+</span>
+        <span>&lt;{metric.format(metric.min)}</span>
+        <span>{metric.format(mid)}</span>
+        <span>{metric.format(metric.max)}+</span>
       </div>
     </div>
   );

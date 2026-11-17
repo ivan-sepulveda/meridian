@@ -1,6 +1,6 @@
-import { getCountries, tradeSource } from "@/lib/countries";
+import { gdpSource, getCountries, servicesSource, tradeSource } from "@/lib/countries";
 
 // No request input, so Next prerenders this response at build time.
 export async function GET() {
-  return Response.json({ countries: getCountries(), trade: tradeSource });
+  return Response.json({ countries: getCountries(), trade: tradeSource, services: servicesSource, gdp: gdpSource });
 }

@@ -1,0 +1,1095 @@
+{
+  "source": "Wikipedia, List of countries by GDP (nominal) per capita (IMF, else World Bank, else UN)",
+  "countries": {
+    "Afghanistan": {
+      "usd": 448,
+      "source": "IMF",
+      "year": 2025
+    },
+    "Albania": {
+      "usd": 13968,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Algeria": {
+      "usd": 6910,
+      "source": "IMF",
+      "year": 2026
+    },
+    "American Samoa": {
+      "usd": 18018,
+      "source": "World Bank",
+      "year": 2022
+    },
+    "Andorra": {
+      "usd": 53988,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Angola": {
+      "usd": 3876,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Anguilla": {
+      "usd": 31269,
+      "source": "UN",
+      "year": 2023
+    },
+    "Antigua and Barb.": {
+      "usd": 22504,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Argentina": {
+      "usd": 16021,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Armenia": {
+      "usd": 10663,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Aruba": {
+      "usd": 42934,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Australia": {
+      "usd": 75172,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Austria": {
+      "usd": 67020,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Azerbaijan": {
+      "usd": 8497,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Bahamas": {
+      "usd": 43858,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Bahrain": {
+      "usd": 28147,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Bangladesh": {
+      "usd": 2887,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Barbados": {
+      "usd": 28245,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Belarus": {
+      "usd": 11962,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Belgium": {
+      "usd": 64773,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Belize": {
+      "usd": 8078,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Benin": {
+      "usd": 1800,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Bermuda": {
+      "usd": 142250,
+      "source": "World Bank",
+      "year": 2024
+    },
+    "Bhutan": {
+      "usd": 4933,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Bolivia": {
+      "usd": 4051,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Bosnia and Herz.": {
+      "usd": 10845,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Botswana": {
+      "usd": 8563,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Brazil": {
+      "usd": 12397,
+      "source": "IMF",
+      "year": 2026
+    },
+    "British Virgin Is.": {
+      "usd": 38627,
+      "source": "UN",
+      "year": 2023
+    },
+    "Brunei": {
+      "usd": 40613,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Bulgaria": {
+      "usd": 22300,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Burkina Faso": {
+      "usd": 1316,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Burundi": {
+      "usd": 510,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Cabo Verde": {
+      "usd": 6556,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Cambodia": {
+      "usd": 3001,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Cameroon": {
+      "usd": 2115,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Canada": {
+      "usd": 60105,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Cayman Is.": {
+      "usd": 104293,
+      "source": "World Bank",
+      "year": 2024
+    },
+    "Central African Rep.": {
+      "usd": 891,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Chad": {
+      "usd": 1295,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Chile": {
+      "usd": 19962,
+      "source": "IMF",
+      "year": 2026
+    },
+    "China": {
+      "usd": 15371,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Colombia": {
+      "usd": 10726,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Comoros": {
+      "usd": 1859,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Congo": {
+      "usd": 2867,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Cook Is.": {
+      "usd": 30161,
+      "source": "UN",
+      "year": 2023
+    },
+    "Costa Rica": {
+      "usd": 21282,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Croatia": {
+      "usd": 29860,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Cuba": {
+      "usd": 9605,
+      "source": "World Bank",
+      "year": 2020
+    },
+    "Curaçao": {
+      "usd": 22833,
+      "source": "World Bank",
+      "year": 2024
+    },
+    "Cyprus": {
+      "usd": 44477,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Czechia": {
+      "usd": 39614,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Côte d'Ivoire": {
+      "usd": 3264,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Dem. Rep. Congo": {
+      "usd": 1111,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Denmark": {
+      "usd": 82713,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Djibouti": {
+      "usd": 4556,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Dominica": {
+      "usd": 10428,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Dominican Rep.": {
+      "usd": 13245,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Ecuador": {
+      "usd": 7575,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Egypt": {
+      "usd": 4024,
+      "source": "IMF",
+      "year": 2026
+    },
+    "El Salvador": {
+      "usd": 6124,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Eq. Guinea": {
+      "usd": 8484,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Eritrea": {
+      "usd": 688,
+      "source": "World Bank",
+      "year": 2011
+    },
+    "Estonia": {
+      "usd": 37310,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Ethiopia": {
+      "usd": 1111,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Faeroe Is.": {
+      "usd": 74175,
+      "source": "World Bank",
+      "year": 2024
+    },
+    "Fiji": {
+      "usd": 7034,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Finland": {
+      "usd": 60156,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Fr. Polynesia": {
+      "usd": 22440,
+      "source": "World Bank",
+      "year": 2024
+    },
+    "France": {
+      "usd": 51448,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Gabon": {
+      "usd": 11034,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Gambia": {
+      "usd": 1030,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Georgia": {
+      "usd": 11234,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Germany": {
+      "usd": 65699,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Ghana": {
+      "usd": 3604,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Greece": {
+      "usd": 29413,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Greenland": {
+      "usd": 58499,
+      "source": "World Bank",
+      "year": 2023
+    },
+    "Grenada": {
+      "usd": 13298,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Guam": {
+      "usd": 41833,
+      "source": "World Bank",
+      "year": 2022
+    },
+    "Guatemala": {
+      "usd": 6980,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Guinea": {
+      "usd": 2785,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Guinea-Bissau": {
+      "usd": 1429,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Guyana": {
+      "usd": 38572,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Haiti": {
+      "usd": 3095,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Honduras": {
+      "usd": 3663,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Hong Kong": {
+      "usd": 60322,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Hungary": {
+      "usd": 27884,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Iceland": {
+      "usd": 107464,
+      "source": "IMF",
+      "year": 2026
+    },
+    "India": {
+      "usd": 2749,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Indonesia": {
+      "usd": 5153,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Iran": {
+      "usd": 3548,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Iraq": {
+      "usd": 5258,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Ireland": {
+      "usd": 127837,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Isle of Man": {
+      "usd": 90015,
+      "source": "World Bank",
+      "year": 2023
+    },
+    "Israel": {
+      "usd": 72441,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Italy": {
+      "usd": 45886,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Jamaica": {
+      "usd": 8674,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Japan": {
+      "usd": 35399,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Jordan": {
+      "usd": 5598,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Kazakhstan": {
+      "usd": 19311,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Kenya": {
+      "usd": 2785,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Kiribati": {
+      "usd": 3058,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Kosovo": {
+      "usd": 8902,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Kuwait": {
+      "usd": 28928,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Kyrgyzstan": {
+      "usd": 3620,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Laos": {
+      "usd": 2331,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Latvia": {
+      "usd": 28630,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Lebanon": {
+      "usd": 6443,
+      "source": "IMF",
+      "year": 2025
+    },
+    "Lesotho": {
+      "usd": 1298,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Liberia": {
+      "usd": 976,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Libya": {
+      "usd": 7557,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Liechtenstein": {
+      "usd": 230417,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Lithuania": {
+      "usd": 36135,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Luxembourg": {
+      "usd": 155733,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Macao": {
+      "usd": 77049,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Macedonia": {
+      "usd": 11762,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Madagascar": {
+      "usd": 649,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Malawi": {
+      "usd": 740,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Malaysia": {
+      "usd": 15981,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Maldives": {
+      "usd": 19507,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Mali": {
+      "usd": 1343,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Malta": {
+      "usd": 52149,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Marshall Is.": {
+      "usd": 9085,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Mauritania": {
+      "usd": 3015,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Mauritius": {
+      "usd": 13671,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Mexico": {
+      "usd": 16191,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Micronesia": {
+      "usd": 7010,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Moldova": {
+      "usd": 9497,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Monaco": {
+      "usd": 288002,
+      "source": "World Bank",
+      "year": 2024
+    },
+    "Mongolia": {
+      "usd": 8570,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Montenegro": {
+      "usd": 16211,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Montserrat": {
+      "usd": 18451,
+      "source": "UN",
+      "year": 2023
+    },
+    "Morocco": {
+      "usd": 5141,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Mozambique": {
+      "usd": 673,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Myanmar": {
+      "usd": 1507,
+      "source": "IMF",
+      "year": 2026
+    },
+    "N. Mariana Is.": {
+      "usd": 23786,
+      "source": "World Bank",
+      "year": 2022
+    },
+    "Namibia": {
+      "usd": 5742,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Nauru": {
+      "usd": 16076,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Nepal": {
+      "usd": 1540,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Netherlands": {
+      "usd": 78535,
+      "source": "IMF",
+      "year": 2026
+    },
+    "New Caledonia": {
+      "usd": 29213,
+      "source": "World Bank",
+      "year": 2024
+    },
+    "New Zealand": {
+      "usd": 51043,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Nicaragua": {
+      "usd": 3732,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Niger": {
+      "usd": 740,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Nigeria": {
+      "usd": 1594,
+      "source": "IMF",
+      "year": 2026
+    },
+    "North Korea": {
+      "usd": 640,
+      "source": "UN",
+      "year": 2023
+    },
+    "Norway": {
+      "usd": 115188,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Oman": {
+      "usd": 22425,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Pakistan": {
+      "usd": 1935,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Palau": {
+      "usd": 21308,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Palestine": {
+      "usd": 2853,
+      "source": "IMF",
+      "year": 2024
+    },
+    "Panama": {
+      "usd": 20877,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Papua New Guinea": {
+      "usd": 3419,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Paraguay": {
+      "usd": 9907,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Peru": {
+      "usd": 11498,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Philippines": {
+      "usd": 4360,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Poland": {
+      "usd": 31186,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Portugal": {
+      "usd": 34815,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Puerto Rico": {
+      "usd": 41851,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Qatar": {
+      "usd": 63634,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Romania": {
+      "usd": 24742,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Russia": {
+      "usd": 19953,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Rwanda": {
+      "usd": 1291,
+      "source": "IMF",
+      "year": 2026
+    },
+    "S. Sudan": {
+      "usd": 642,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Saint Lucia": {
+      "usd": 15091,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Samoa": {
+      "usd": 6303,
+      "source": "IMF",
+      "year": 2026
+    },
+    "San Marino": {
+      "usd": 70662,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Saudi Arabia": {
+      "usd": 36577,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Senegal": {
+      "usd": 2054,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Serbia": {
+      "usd": 17126,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Seychelles": {
+      "usd": 19157,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Sierra Leone": {
+      "usd": 947,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Singapore": {
+      "usd": 109117,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Sint Maarten": {
+      "usd": 42978,
+      "source": "World Bank",
+      "year": 2025
+    },
+    "Slovakia": {
+      "usd": 30884,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Slovenia": {
+      "usd": 41631,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Solomon Is.": {
+      "usd": 2295,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Somalia": {
+      "usd": 850,
+      "source": "IMF",
+      "year": 2026
+    },
+    "South Africa": {
+      "usd": 7659,
+      "source": "IMF",
+      "year": 2026
+    },
+    "South Korea": {
+      "usd": 43512,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Spain": {
+      "usd": 41756,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Sri Lanka": {
+      "usd": 5062,
+      "source": "IMF",
+      "year": 2026
+    },
+    "St-Martin": {
+      "usd": 21668,
+      "source": "World Bank",
+      "year": 2021
+    },
+    "St. Kitts and Nevis": {
+      "usd": 22237,
+      "source": "IMF",
+      "year": 2026
+    },
+    "St. Vin. and Gren.": {
+      "usd": 11405,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Sudan": {
+      "usd": 597,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Suriname": {
+      "usd": 8965,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Sweden": {
+      "usd": 69244,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Switzerland": {
+      "usd": 124478,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Syria": {
+      "usd": 1057,
+      "source": "World Bank",
+      "year": 2022
+    },
+    "São Tomé and Principe": {
+      "usd": 4582,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Taiwan": {
+      "usd": 43951,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Tajikistan": {
+      "usd": 2005,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Tanzania": {
+      "usd": 1325,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Thailand": {
+      "usd": 8372,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Timor-Leste": {
+      "usd": 1520,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Togo": {
+      "usd": 1480,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Tonga": {
+      "usd": 7343,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Trinidad and Tobago": {
+      "usd": 18603,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Tunisia": {
+      "usd": 5053,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Turkey": {
+      "usd": 21079,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Turkmenistan": {
+      "usd": 12291,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Turks and Caicos Is.": {
+      "usd": 37507,
+      "source": "World Bank",
+      "year": 2024
+    },
+    "U.S. Virgin Is.": {
+      "usd": 44321,
+      "source": "World Bank",
+      "year": 2022
+    },
+    "Uganda": {
+      "usd": 1453,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Ukraine": {
+      "usd": 7075,
+      "source": "IMF",
+      "year": 2026
+    },
+    "United Arab Emirates": {
+      "usd": 57109,
+      "source": "IMF",
+      "year": 2026
+    },
+    "United Kingdom": {
+      "usd": 61108,
+      "source": "IMF",
+      "year": 2026
+    },
+    "United States of America": {
+      "usd": 95212,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Uruguay": {
+      "usd": 27339,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Uzbekistan": {
+      "usd": 4575,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Vanuatu": {
+      "usd": 4052,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Venezuela": {
+      "usd": 4355,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Vietnam": {
+      "usd": 5260,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Yemen": {
+      "usd": 567,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Zambia": {
+      "usd": 1882,
+      "source": "IMF",
+      "year": 2026
+    },
+    "Zimbabwe": {
+      "usd": 3718,
+      "source": "IMF",
+      "year": 2026
+    },
+    "eSwatini": {
+      "usd": 4775,
+      "source": "IMF",
+      "year": 2026
+    }
+  }
+}

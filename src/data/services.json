@@ -1,0 +1,2016 @@
+{
+  "source": "World Bank WDI (IMF balance of payments)",
+  "countries": {
+    "004": {
+      "iso3": "AFG",
+      "year": 2020,
+      "servicesExportsUsd": 699571420,
+      "servicesShare": 0.4739,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 491099563,
+        "share": 0.702
+      }
+    },
+    "008": {
+      "iso3": "ALB",
+      "year": 2025,
+      "servicesExportsUsd": 9655587972,
+      "servicesShare": 0.8455,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 6536089260,
+        "share": 0.6769
+      }
+    },
+    "012": {
+      "iso3": "DZA",
+      "year": 2025,
+      "servicesExportsUsd": 3895100391,
+      "servicesShare": 0.0799,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 2171762295,
+        "share": 0.5576
+      }
+    },
+    "020": {
+      "iso3": "AND",
+      "year": 2025,
+      "servicesExportsUsd": 3912434724,
+      "servicesShare": 0.9375,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 3303074274,
+        "share": 0.8443
+      }
+    },
+    "024": {
+      "iso3": "AGO",
+      "year": 2025,
+      "servicesExportsUsd": 117938694,
+      "servicesShare": 0.0038,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 54601166,
+        "share": 0.463
+      }
+    },
+    "028": {
+      "iso3": "ATG",
+      "year": 2025,
+      "servicesExportsUsd": 1211430374,
+      "servicesShare": 0.9266,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 1020815935,
+        "share": 0.8427
+      }
+    },
+    "031": {
+      "iso3": "AZE",
+      "year": 2025,
+      "servicesExportsUsd": 8595464000,
+      "servicesShare": 0.2631,
+      "topService": {
+        "label": "Transport",
+        "valueUsd": 3654460000,
+        "share": 0.4252
+      }
+    },
+    "032": {
+      "iso3": "ARG",
+      "year": 2025,
+      "servicesExportsUsd": 18340857334,
+      "servicesShare": 0.1739,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 7362700351,
+        "share": 0.4014
+      }
+    },
+    "036": {
+      "iso3": "AUS",
+      "year": 2025,
+      "servicesExportsUsd": 91591916759,
+      "servicesShare": 0.2133,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 55204232329,
+        "share": 0.6027
+      }
+    },
+    "040": {
+      "iso3": "AUT",
+      "year": 2025,
+      "servicesExportsUsd": 105494147207,
+      "servicesShare": 0.3303,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 32665274586,
+        "share": 0.3096
+      }
+    },
+    "044": {
+      "iso3": "BHS",
+      "year": 2024,
+      "servicesExportsUsd": 5896984361,
+      "servicesShare": 0.8709,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 5537271482,
+        "share": 0.939
+      }
+    },
+    "048": {
+      "iso3": "BHR",
+      "year": 2025,
+      "servicesExportsUsd": 18690425532,
+      "servicesShare": 0.4306,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 6259042553,
+        "share": 0.3349
+      }
+    },
+    "050": {
+      "iso3": "BGD",
+      "year": 2025,
+      "servicesExportsUsd": 8424862919,
+      "servicesShare": 0.1612,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 5654871812,
+        "share": 0.6712
+      }
+    },
+    "051": {
+      "iso3": "ARM",
+      "year": 2025,
+      "servicesExportsUsd": 6072918906,
+      "servicesShare": 0.4184,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 2910690914,
+        "share": 0.4793
+      }
+    },
+    "056": {
+      "iso3": "BEL",
+      "year": 2025,
+      "servicesExportsUsd": 160945475525,
+      "servicesShare": 0.2926,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 75489348398,
+        "share": 0.469
+      }
+    },
+    "060": {
+      "iso3": "BMU",
+      "year": 2025,
+      "servicesExportsUsd": 1959895059,
+      "servicesShare": 0.9939,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 794928616,
+        "share": 0.4056
+      }
+    },
+    "064": {
+      "iso3": "BTN",
+      "year": 2024,
+      "servicesExportsUsd": 288136244,
+      "servicesShare": 0.3039,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 199114925,
+        "share": 0.691
+      }
+    },
+    "068": {
+      "iso3": "BOL",
+      "year": 2025,
+      "servicesExportsUsd": 1268050451,
+      "servicesShare": 0.1083,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 818551235,
+        "share": 0.6455
+      }
+    },
+    "070": {
+      "iso3": "BIH",
+      "year": 2025,
+      "servicesExportsUsd": 4011779656,
+      "servicesShare": 0.299,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 2129604339,
+        "share": 0.5308
+      }
+    },
+    "072": {
+      "iso3": "BWA",
+      "year": 2025,
+      "servicesExportsUsd": 1052196287,
+      "servicesShare": 0.1599,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 580489832,
+        "share": 0.5517
+      }
+    },
+    "076": {
+      "iso3": "BRA",
+      "year": 2025,
+      "servicesExportsUsd": 54420203876,
+      "servicesShare": 0.1344,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 24971136463,
+        "share": 0.4589
+      }
+    },
+    "084": {
+      "iso3": "BLZ",
+      "year": 2025,
+      "servicesExportsUsd": 1214117947,
+      "servicesShare": 0.7327,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 827339351,
+        "share": 0.6814
+      }
+    },
+    "090": {
+      "iso3": "SLB",
+      "year": 2024,
+      "servicesExportsUsd": 132632606,
+      "servicesShare": 0.2063,
+      "topService": {
+        "label": "Transport",
+        "valueUsd": 59944962,
+        "share": 0.452
+      }
+    },
+    "096": {
+      "iso3": "BRN",
+      "year": 2025,
+      "servicesExportsUsd": 463217798,
+      "servicesShare": 0.0431,
+      "topService": {
+        "label": "Transport",
+        "valueUsd": 236250056,
+        "share": 0.51
+      }
+    },
+    "100": {
+      "iso3": "BGR",
+      "year": 2025,
+      "servicesExportsUsd": 18618670000,
+      "servicesShare": 0.2797,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 4867600000,
+        "share": 0.2614
+      }
+    },
+    "104": {
+      "iso3": "MMR",
+      "year": 2019,
+      "servicesExportsUsd": 6682540983,
+      "servicesShare": 0.3813,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 3641085136,
+        "share": 0.5449
+      }
+    },
+    "108": {
+      "iso3": "BDI",
+      "year": 2025,
+      "servicesExportsUsd": 148118951,
+      "servicesShare": 0.2669,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 122452207,
+        "share": 0.8267
+      }
+    },
+    "112": {
+      "iso3": "BLR",
+      "year": 2025,
+      "servicesExportsUsd": 11858575734,
+      "servicesShare": 0.2267,
+      "topService": null
+    },
+    "116": {
+      "iso3": "KHM",
+      "year": 2025,
+      "servicesExportsUsd": 5351433093,
+      "servicesShare": 0.1458,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 3884299927,
+        "share": 0.7258
+      }
+    },
+    "120": {
+      "iso3": "CMR",
+      "year": 2024,
+      "servicesExportsUsd": 1805072605,
+      "servicesShare": 0.2101,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 699495861,
+        "share": 0.3875
+      }
+    },
+    "124": {
+      "iso3": "CAN",
+      "year": 2025,
+      "servicesExportsUsd": 172053214974,
+      "servicesShare": 0.2368,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 54816811774,
+        "share": 0.3186
+      }
+    },
+    "132": {
+      "iso3": "CPV",
+      "year": 2025,
+      "servicesExportsUsd": 939938216,
+      "servicesShare": 0.7319,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 735890466,
+        "share": 0.7829
+      }
+    },
+    "136": {
+      "iso3": "CYM",
+      "year": 2024,
+      "servicesExportsUsd": 4766704350,
+      "servicesShare": 0.9467,
+      "topService": {
+        "label": "Insurance & finance",
+        "valueUsd": 2630432840,
+        "share": 0.5518
+      }
+    },
+    "144": {
+      "iso3": "LKA",
+      "year": 2025,
+      "servicesExportsUsd": 7065692350,
+      "servicesShare": 0.3422,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 3219236868,
+        "share": 0.4556
+      }
+    },
+    "152": {
+      "iso3": "CHL",
+      "year": 2025,
+      "servicesExportsUsd": 13012131976,
+      "servicesShare": 0.1055,
+      "topService": {
+        "label": "Transport",
+        "valueUsd": 4045730946,
+        "share": 0.3109
+      }
+    },
+    "156": {
+      "iso3": "CHN",
+      "year": 2025,
+      "servicesExportsUsd": 384679024469,
+      "servicesShare": 0.093,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 166632512578,
+        "share": 0.4332
+      }
+    },
+    "170": {
+      "iso3": "COL",
+      "year": 2025,
+      "servicesExportsUsd": 19970115649,
+      "servicesShare": 0.2795,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 9669091519,
+        "share": 0.4842
+      }
+    },
+    "174": {
+      "iso3": "COM",
+      "year": 2023,
+      "servicesExportsUsd": 116386921,
+      "servicesShare": 0.784,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 84846044,
+        "share": 0.729
+      }
+    },
+    "178": {
+      "iso3": "COG",
+      "year": 2021,
+      "servicesExportsUsd": 239956067,
+      "servicesShare": 0.031,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 136529868,
+        "share": 0.569
+      }
+    },
+    "180": {
+      "iso3": "COD",
+      "year": 2025,
+      "servicesExportsUsd": 548125681,
+      "servicesShare": 0.015,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 282207497,
+        "share": 0.5149
+      }
+    },
+    "188": {
+      "iso3": "CRI",
+      "year": 2025,
+      "servicesExportsUsd": 18083355635,
+      "servicesShare": 0.4345,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 8556333192,
+        "share": 0.4732
+      }
+    },
+    "191": {
+      "iso3": "HRV",
+      "year": 2025,
+      "servicesExportsUsd": 26719759727,
+      "servicesShare": 0.5216,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 17640044343,
+        "share": 0.6602
+      }
+    },
+    "196": {
+      "iso3": "CYP",
+      "year": 2025,
+      "servicesExportsUsd": 35729151588,
+      "servicesShare": 0.8854,
+      "topService": {
+        "label": "Computer & telecom services",
+        "valueUsd": 10030920648,
+        "share": 0.2807
+      }
+    },
+    "203": {
+      "iso3": "CZE",
+      "year": 2025,
+      "servicesExportsUsd": 47538348447,
+      "servicesShare": 0.1811,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 15577231496,
+        "share": 0.3277
+      }
+    },
+    "204": {
+      "iso3": "BEN",
+      "year": 2023,
+      "servicesExportsUsd": 461100623,
+      "servicesShare": 0.1022,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 250974581,
+        "share": 0.5443
+      }
+    },
+    "208": {
+      "iso3": "DNK",
+      "year": 2025,
+      "servicesExportsUsd": 131957955006,
+      "servicesShare": 0.4037,
+      "topService": {
+        "label": "Transport",
+        "valueUsd": 64169742547,
+        "share": 0.4863
+      }
+    },
+    "212": {
+      "iso3": "DMA",
+      "year": 2025,
+      "servicesExportsUsd": 180574263,
+      "servicesShare": 0.8584,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 128451579,
+        "share": 0.7114
+      }
+    },
+    "214": {
+      "iso3": "DOM",
+      "year": 2025,
+      "servicesExportsUsd": 14434800000,
+      "servicesShare": 0.4791,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 11321400000,
+        "share": 0.7843
+      }
+    },
+    "218": {
+      "iso3": "ECU",
+      "year": 2025,
+      "servicesExportsUsd": 4201819447,
+      "servicesShare": 0.1009,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 1931729628,
+        "share": 0.4597
+      }
+    },
+    "222": {
+      "iso3": "SLV",
+      "year": 2025,
+      "servicesExportsUsd": 6213512532,
+      "servicesShare": 0.5282,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 3685302416,
+        "share": 0.5931
+      }
+    },
+    "231": {
+      "iso3": "ETH",
+      "year": 2024,
+      "servicesExportsUsd": 7608411739,
+      "servicesShare": 0.5768,
+      "topService": {
+        "label": "Transport",
+        "valueUsd": 5961453945,
+        "share": 0.7835
+      }
+    },
+    "233": {
+      "iso3": "EST",
+      "year": 2025,
+      "servicesExportsUsd": 15793940746,
+      "servicesShare": 0.4267,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 6576395575,
+        "share": 0.4164
+      }
+    },
+    "242": {
+      "iso3": "FJI",
+      "year": 2024,
+      "servicesExportsUsd": 2117923273,
+      "servicesShare": 0.6522,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 1124144605,
+        "share": 0.5308
+      }
+    },
+    "246": {
+      "iso3": "FIN",
+      "year": 2025,
+      "servicesExportsUsd": 45079022318,
+      "servicesShare": 0.3303,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 15388467651,
+        "share": 0.3414
+      }
+    },
+    "250": {
+      "iso3": "FRA",
+      "year": 2025,
+      "servicesExportsUsd": 430502773088,
+      "servicesShare": 0.3789,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 177799542478,
+        "share": 0.413
+      }
+    },
+    "262": {
+      "iso3": "DJI",
+      "year": 2024,
+      "servicesExportsUsd": 1173078423,
+      "servicesShare": 0.2235,
+      "topService": {
+        "label": "Transport",
+        "valueUsd": 709774452,
+        "share": 0.6051
+      }
+    },
+    "268": {
+      "iso3": "GEO",
+      "year": 2025,
+      "servicesExportsUsd": 8493953125,
+      "servicesShare": 0.4686,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 4690180153,
+        "share": 0.5522
+      }
+    },
+    "270": {
+      "iso3": "GMB",
+      "year": 2025,
+      "servicesExportsUsd": 461001123,
+      "servicesShare": 0.5311,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 428044824,
+        "share": 0.9285
+      }
+    },
+    "275": {
+      "iso3": "PSE",
+      "year": 2025,
+      "servicesExportsUsd": 606762861,
+      "servicesShare": 0.1677,
+      "topService": null
+    },
+    "276": {
+      "iso3": "DEU",
+      "year": 2025,
+      "servicesExportsUsd": 518047040038,
+      "servicesShare": 0.253,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 191070154602,
+        "share": 0.3688
+      }
+    },
+    "288": {
+      "iso3": "GHA",
+      "year": 2025,
+      "servicesExportsUsd": 10059900446,
+      "servicesShare": 0.2435,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 6211754460,
+        "share": 0.6175
+      }
+    },
+    "296": {
+      "iso3": "KIR",
+      "year": 2025,
+      "servicesExportsUsd": 8554661,
+      "servicesShare": 0.3306,
+      "topService": null
+    },
+    "300": {
+      "iso3": "GRC",
+      "year": 2025,
+      "servicesExportsUsd": 58301594025,
+      "servicesShare": 0.5213,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 27235437399,
+        "share": 0.4671
+      }
+    },
+    "308": {
+      "iso3": "GRD",
+      "year": 2025,
+      "servicesExportsUsd": 755748610,
+      "servicesShare": 0.9181,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 670835900,
+        "share": 0.8876
+      }
+    },
+    "320": {
+      "iso3": "GTM",
+      "year": 2025,
+      "servicesExportsUsd": 4886323350,
+      "servicesShare": 0.2546,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 1809833090,
+        "share": 0.3704
+      }
+    },
+    "324": {
+      "iso3": "GIN",
+      "year": 2024,
+      "servicesExportsUsd": 71200000,
+      "servicesShare": 0.0061,
+      "topService": {
+        "label": "Computer & telecom services",
+        "valueUsd": 36860000,
+        "share": 0.5177
+      }
+    },
+    "328": {
+      "iso3": "GUY",
+      "year": 2023,
+      "servicesExportsUsd": 528907197,
+      "servicesShare": 0.0385,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 398820000,
+        "share": 0.754
+      }
+    },
+    "332": {
+      "iso3": "HTI",
+      "year": 2024,
+      "servicesExportsUsd": 96566228,
+      "servicesShare": 0.1118,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 36414475,
+        "share": 0.3771
+      }
+    },
+    "340": {
+      "iso3": "HND",
+      "year": 2025,
+      "servicesExportsUsd": 3893248524,
+      "servicesShare": 0.3614,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 2728232720,
+        "share": 0.7008
+      }
+    },
+    "344": {
+      "iso3": "HKG",
+      "year": 2025,
+      "servicesExportsUsd": 115235605764,
+      "servicesShare": 0.135,
+      "topService": {
+        "label": "Transport",
+        "valueUsd": 35241488399,
+        "share": 0.3058
+      }
+    },
+    "348": {
+      "iso3": "HUN",
+      "year": 2025,
+      "servicesExportsUsd": 43109660023,
+      "servicesShare": 0.2402,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 15498012974,
+        "share": 0.3595
+      }
+    },
+    "352": {
+      "iso3": "ISL",
+      "year": 2025,
+      "servicesExportsUsd": 8232503696,
+      "servicesShare": 0.5265,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 3772911027,
+        "share": 0.4583
+      }
+    },
+    "356": {
+      "iso3": "IND",
+      "year": 2025,
+      "servicesExportsUsd": 412252828325,
+      "servicesShare": 0.4784,
+      "topService": {
+        "label": "Computer & telecom services",
+        "valueUsd": 200343788283,
+        "share": 0.486
+      }
+    },
+    "360": {
+      "iso3": "IDN",
+      "year": 2025,
+      "servicesExportsUsd": 42580721047,
+      "servicesShare": 0.1318,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 18274652931,
+        "share": 0.4292
+      }
+    },
+    "368": {
+      "iso3": "IRQ",
+      "year": 2025,
+      "servicesExportsUsd": 10490000000,
+      "servicesShare": 0.1019,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 7488800000,
+        "share": 0.7139
+      }
+    },
+    "372": {
+      "iso3": "IRL",
+      "year": 2025,
+      "servicesExportsUsd": 547958263897,
+      "servicesShare": 0.5697,
+      "topService": {
+        "label": "Computer & telecom services",
+        "valueUsd": 358760665967,
+        "share": 0.6547
+      }
+    },
+    "376": {
+      "iso3": "ISR",
+      "year": 2025,
+      "servicesExportsUsd": 90718200000,
+      "servicesShare": 0.5214,
+      "topService": {
+        "label": "Computer & telecom services",
+        "valueUsd": 58633600000,
+        "share": 0.6463
+      }
+    },
+    "380": {
+      "iso3": "ITA",
+      "year": 2025,
+      "servicesExportsUsd": 168496506714,
+      "servicesShare": 0.2045,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 64653263477,
+        "share": 0.3837
+      }
+    },
+    "384": {
+      "iso3": "CIV",
+      "year": 2024,
+      "servicesExportsUsd": 1215048592,
+      "servicesShare": 0.0552,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 472717445,
+        "share": 0.3891
+      }
+    },
+    "388": {
+      "iso3": "JAM",
+      "year": 2025,
+      "servicesExportsUsd": 5057675990,
+      "servicesShare": 0.7538,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 4108850476,
+        "share": 0.8124
+      }
+    },
+    "392": {
+      "iso3": "JPN",
+      "year": 2025,
+      "servicesExportsUsd": 246061223124,
+      "servicesShare": 0.2533,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 64044852870,
+        "share": 0.2603
+      }
+    },
+    "398": {
+      "iso3": "KAZ",
+      "year": 2025,
+      "servicesExportsUsd": 12818869436,
+      "servicesShare": 0.1422,
+      "topService": {
+        "label": "Transport",
+        "valueUsd": 5748978623,
+        "share": 0.4485
+      }
+    },
+    "400": {
+      "iso3": "JOR",
+      "year": 2024,
+      "servicesExportsUsd": 9448732394,
+      "servicesShare": 0.4156,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 7228732394,
+        "share": 0.765
+      }
+    },
+    "404": {
+      "iso3": "KEN",
+      "year": 2025,
+      "servicesExportsUsd": 8393817999,
+      "servicesShare": 0.3917,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 3825548421,
+        "share": 0.4558
+      }
+    },
+    "410": {
+      "iso3": "KOR",
+      "year": 2025,
+      "servicesExportsUsd": 150143500000,
+      "servicesShare": 0.1728,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 55554600000,
+        "share": 0.37
+      }
+    },
+    "414": {
+      "iso3": "KWT",
+      "year": 2025,
+      "servicesExportsUsd": 12690948293,
+      "servicesShare": 0.1522,
+      "topService": {
+        "label": "Computer & telecom services",
+        "valueUsd": 6252957274,
+        "share": 0.4927
+      }
+    },
+    "417": {
+      "iso3": "KGZ",
+      "year": 2024,
+      "servicesExportsUsd": 3317614486,
+      "servicesShare": 0.3924,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 1166140137,
+        "share": 0.3515
+      }
+    },
+    "418": {
+      "iso3": "LAO",
+      "year": 2025,
+      "servicesExportsUsd": 1833797791,
+      "servicesShare": 0.1284,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 1485434556,
+        "share": 0.81
+      }
+    },
+    "422": {
+      "iso3": "LBN",
+      "year": 2023,
+      "servicesExportsUsd": 7921517837,
+      "servicesShare": 0.673,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 5409490886,
+        "share": 0.6829
+      }
+    },
+    "426": {
+      "iso3": "LSO",
+      "year": 2025,
+      "servicesExportsUsd": 20704118,
+      "servicesShare": 0.0217,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 14098430,
+        "share": 0.6809
+      }
+    },
+    "428": {
+      "iso3": "LVA",
+      "year": 2025,
+      "servicesExportsUsd": 9358865344,
+      "servicesShare": 0.3125,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 3120858756,
+        "share": 0.3335
+      }
+    },
+    "430": {
+      "iso3": "LBR",
+      "year": 2024,
+      "servicesExportsUsd": 42640286,
+      "servicesShare": 0.0315,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 24639024,
+        "share": 0.5778
+      }
+    },
+    "434": {
+      "iso3": "LBY",
+      "year": 2023,
+      "servicesExportsUsd": 642200000,
+      "servicesShare": 0.017,
+      "topService": {
+        "label": "Insurance & finance",
+        "valueUsd": 604400000,
+        "share": 0.9411
+      }
+    },
+    "440": {
+      "iso3": "LTU",
+      "year": 2025,
+      "servicesExportsUsd": 28820403279,
+      "servicesShare": 0.4144,
+      "topService": {
+        "label": "Transport",
+        "valueUsd": 12590360363,
+        "share": 0.4369
+      }
+    },
+    "442": {
+      "iso3": "LUX",
+      "year": 2025,
+      "servicesExportsUsd": 178032679822,
+      "servicesShare": 0.844,
+      "topService": {
+        "label": "Insurance & finance",
+        "valueUsd": 99741771370,
+        "share": 0.5602
+      }
+    },
+    "446": {
+      "iso3": "MAC",
+      "year": 2025,
+      "servicesExportsUsd": 43563454180,
+      "servicesShare": 0.9068,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 39369200473,
+        "share": 0.9037
+      }
+    },
+    "450": {
+      "iso3": "MDG",
+      "year": 2025,
+      "servicesExportsUsd": 1661436626,
+      "servicesShare": 0.4008,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 763480096,
+        "share": 0.4595
+      }
+    },
+    "454": {
+      "iso3": "MWI",
+      "year": 2025,
+      "servicesExportsUsd": 607101345,
+      "servicesShare": 0.3886,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 286021845,
+        "share": 0.4711
+      }
+    },
+    "458": {
+      "iso3": "MYS",
+      "year": 2025,
+      "servicesExportsUsd": 65021579202,
+      "servicesShare": 0.1901,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 25902597457,
+        "share": 0.3984
+      }
+    },
+    "462": {
+      "iso3": "MDV",
+      "year": 2025,
+      "servicesExportsUsd": 5798293734,
+      "servicesShare": 0.9289,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 5571079047,
+        "share": 0.9608
+      }
+    },
+    "466": {
+      "iso3": "MLI",
+      "year": 2024,
+      "servicesExportsUsd": 516357596,
+      "servicesShare": 0.0861,
+      "topService": {
+        "label": "Computer & telecom services",
+        "valueUsd": 172162628,
+        "share": 0.3334
+      }
+    },
+    "470": {
+      "iso3": "MLT",
+      "year": 2024,
+      "servicesExportsUsd": 25031434981,
+      "servicesShare": 0.8454,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 15194060732,
+        "share": 0.607
+      }
+    },
+    "478": {
+      "iso3": "MRT",
+      "year": 2024,
+      "servicesExportsUsd": 229552473,
+      "servicesShare": 0.0566,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 156096735,
+        "share": 0.68
+      }
+    },
+    "480": {
+      "iso3": "MUS",
+      "year": 2024,
+      "servicesExportsUsd": 4194631451,
+      "servicesShare": 0.6392,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 2016208627,
+        "share": 0.4807
+      }
+    },
+    "484": {
+      "iso3": "MEX",
+      "year": 2025,
+      "servicesExportsUsd": 65801982384,
+      "servicesShare": 0.09,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 34991625434,
+        "share": 0.5318
+      }
+    },
+    "496": {
+      "iso3": "MNG",
+      "year": 2025,
+      "servicesExportsUsd": 1919645512,
+      "servicesShare": 0.1112,
+      "topService": {
+        "label": "Transport",
+        "valueUsd": 739626974,
+        "share": 0.3853
+      }
+    },
+    "498": {
+      "iso3": "MDA",
+      "year": 2025,
+      "servicesExportsUsd": 3215612308,
+      "servicesShare": 0.499,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 959794895,
+        "share": 0.2985
+      }
+    },
+    "499": {
+      "iso3": "MNE",
+      "year": 2025,
+      "servicesExportsUsd": 3072191652,
+      "servicesShare": 0.8224,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 1707546576,
+        "share": 0.5558
+      }
+    },
+    "504": {
+      "iso3": "MAR",
+      "year": 2025,
+      "servicesExportsUsd": 33644684565,
+      "servicesShare": 0.4349,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 14940148105,
+        "share": 0.4441
+      }
+    },
+    "508": {
+      "iso3": "MOZ",
+      "year": 2025,
+      "servicesExportsUsd": 1232307362,
+      "servicesShare": 0.1365,
+      "topService": {
+        "label": "Transport",
+        "valueUsd": 907701480,
+        "share": 0.7366
+      }
+    },
+    "512": {
+      "iso3": "OMN",
+      "year": 2025,
+      "servicesExportsUsd": 5836456589,
+      "servicesShare": 0.0881,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 2822357767,
+        "share": 0.4836
+      }
+    },
+    "516": {
+      "iso3": "NAM",
+      "year": 2024,
+      "servicesExportsUsd": 1289050821,
+      "servicesShare": 0.2164,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 441516582,
+        "share": 0.3425
+      }
+    },
+    "520": {
+      "iso3": "NRU",
+      "year": 2024,
+      "servicesExportsUsd": 64551847,
+      "servicesShare": 0.7166,
+      "topService": null
+    },
+    "524": {
+      "iso3": "NPL",
+      "year": 2025,
+      "servicesExportsUsd": 1814692284,
+      "servicesShare": 0.4131,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 740158656,
+        "share": 0.4079
+      }
+    },
+    "528": {
+      "iso3": "NLD",
+      "year": 2025,
+      "servicesExportsUsd": 333234343491,
+      "servicesShare": 0.3087,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 134804637595,
+        "share": 0.4045
+      }
+    },
+    "531": {
+      "iso3": "CUW",
+      "year": 2023,
+      "servicesExportsUsd": 1546440314,
+      "servicesShare": 0.7341,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 1018324022,
+        "share": 0.6585
+      }
+    },
+    "533": {
+      "iso3": "ABW",
+      "year": 2023,
+      "servicesExportsUsd": 2988845686,
+      "servicesShare": 0.9478,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 2625129922,
+        "share": 0.8783
+      }
+    },
+    "534": {
+      "iso3": "SXM",
+      "year": 2023,
+      "servicesExportsUsd": 1272912055,
+      "servicesShare": 0.8464,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 1028513966,
+        "share": 0.808
+      }
+    },
+    "548": {
+      "iso3": "VUT",
+      "year": 2022,
+      "servicesExportsUsd": 78474765,
+      "servicesShare": 0.516,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 39047543,
+        "share": 0.4976
+      }
+    },
+    "554": {
+      "iso3": "NZL",
+      "year": 2025,
+      "servicesExportsUsd": 19508075519,
+      "servicesShare": 0.2921,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 9981586895,
+        "share": 0.5117
+      }
+    },
+    "558": {
+      "iso3": "NIC",
+      "year": 2024,
+      "servicesExportsUsd": 1298118290,
+      "servicesShare": 0.1596,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 510900000,
+        "share": 0.3936
+      }
+    },
+    "562": {
+      "iso3": "NER",
+      "year": 2024,
+      "servicesExportsUsd": 247645773,
+      "servicesShare": 0.1405,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 76669218,
+        "share": 0.3096
+      }
+    },
+    "566": {
+      "iso3": "NGA",
+      "year": 2025,
+      "servicesExportsUsd": 5055337925,
+      "servicesShare": 0.0808,
+      "topService": {
+        "label": "Transport",
+        "valueUsd": 2321569199,
+        "share": 0.4592
+      }
+    },
+    "578": {
+      "iso3": "NOR",
+      "year": 2025,
+      "servicesExportsUsd": 64570361504,
+      "servicesShare": 0.2679,
+      "topService": {
+        "label": "Transport",
+        "valueUsd": 22566587233,
+        "share": 0.3495
+      }
+    },
+    "584": {
+      "iso3": "MHL",
+      "year": 2024,
+      "servicesExportsUsd": 21141842,
+      "servicesShare": 0.1726,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 9898601,
+        "share": 0.4682
+      }
+    },
+    "585": {
+      "iso3": "PLW",
+      "year": 2023,
+      "servicesExportsUsd": 61894000,
+      "servicesShare": 0.9726,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 52422000,
+        "share": 0.847
+      }
+    },
+    "586": {
+      "iso3": "PAK",
+      "year": 2025,
+      "servicesExportsUsd": 9086005500,
+      "servicesShare": 0.2237,
+      "topService": {
+        "label": "Computer & telecom services",
+        "valueUsd": 4185000000,
+        "share": 0.4606
+      }
+    },
+    "591": {
+      "iso3": "PAN",
+      "year": 2025,
+      "servicesExportsUsd": 20194027092,
+      "servicesShare": 0.5204,
+      "topService": {
+        "label": "Transport",
+        "valueUsd": 10346408786,
+        "share": 0.5123
+      }
+    },
+    "598": {
+      "iso3": "PNG",
+      "year": 2024,
+      "servicesExportsUsd": 75209664,
+      "servicesShare": 0.0056,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 68170841,
+        "share": 0.9064
+      }
+    },
+    "600": {
+      "iso3": "PRY",
+      "year": 2025,
+      "servicesExportsUsd": 3728187141,
+      "servicesShare": 0.1914,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 1455566633,
+        "share": 0.3904
+      }
+    },
+    "604": {
+      "iso3": "PER",
+      "year": 2025,
+      "servicesExportsUsd": 7642959672,
+      "servicesShare": 0.0752,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 3963498652,
+        "share": 0.5186
+      }
+    },
+    "608": {
+      "iso3": "PHL",
+      "year": 2025,
+      "servicesExportsUsd": 51499108078,
+      "servicesShare": 0.4481,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 30675552335,
+        "share": 0.5957
+      }
+    },
+    "616": {
+      "iso3": "POL",
+      "year": 2025,
+      "servicesExportsUsd": 130948000000,
+      "servicesShare": 0.2511,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 54151000000,
+        "share": 0.4135
+      }
+    },
+    "620": {
+      "iso3": "PRT",
+      "year": 2025,
+      "servicesExportsUsd": 68965998082,
+      "servicesShare": 0.4532,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 33155811382,
+        "share": 0.4808
+      }
+    },
+    "624": {
+      "iso3": "GNB",
+      "year": 2024,
+      "servicesExportsUsd": 51007944,
+      "servicesShare": 0.1819,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 22695153,
+        "share": 0.4449
+      }
+    },
+    "626": {
+      "iso3": "TLS",
+      "year": 2025,
+      "servicesExportsUsd": 146892486,
+      "servicesShare": 0.5376,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 109633308,
+        "share": 0.7464
+      }
+    },
+    "634": {
+      "iso3": "QAT",
+      "year": 2025,
+      "servicesExportsUsd": 24350549451,
+      "servicesShare": 0.2129,
+      "topService": {
+        "label": "Transport",
+        "valueUsd": 15822802198,
+        "share": 0.6498
+      }
+    },
+    "642": {
+      "iso3": "ROU",
+      "year": 2025,
+      "servicesExportsUsd": 50061495301,
+      "servicesShare": 0.3284,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 17602556433,
+        "share": 0.3516
+      }
+    },
+    "643": {
+      "iso3": "RUS",
+      "year": 2025,
+      "servicesExportsUsd": 46264050000,
+      "servicesShare": 0.0993,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 17613080000,
+        "share": 0.3807
+      }
+    },
+    "646": {
+      "iso3": "RWA",
+      "year": 2024,
+      "servicesExportsUsd": 1081012493,
+      "servicesShare": 0.2525,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 579461878,
+        "share": 0.536
+      }
+    },
+    "659": {
+      "iso3": "KNA",
+      "year": 2025,
+      "servicesExportsUsd": 528830532,
+      "servicesShare": 0.9192,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 413376267,
+        "share": 0.7817
+      }
+    },
+    "662": {
+      "iso3": "LCA",
+      "year": 2025,
+      "servicesExportsUsd": 1404579504,
+      "servicesShare": 0.907,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 1309910231,
+        "share": 0.9326
+      }
+    },
+    "670": {
+      "iso3": "VCT",
+      "year": 2025,
+      "servicesExportsUsd": 381784120,
+      "servicesShare": 0.8802,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 324979546,
+        "share": 0.8512
+      }
+    },
+    "674": {
+      "iso3": "SMR",
+      "year": 2024,
+      "servicesExportsUsd": 1258362775,
+      "servicesShare": 0.3343,
+      "topService": null
+    },
+    "678": {
+      "iso3": "STP",
+      "year": 2025,
+      "servicesExportsUsd": 111972908,
+      "servicesShare": 0.747,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 83400061,
+        "share": 0.7448
+      }
+    },
+    "682": {
+      "iso3": "SAU",
+      "year": 2025,
+      "servicesExportsUsd": 69411317974,
+      "servicesShare": 0.1825,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 42628340310,
+        "share": 0.6141
+      }
+    },
+    "686": {
+      "iso3": "SEN",
+      "year": 2023,
+      "servicesExportsUsd": 1480427185,
+      "servicesShare": 0.2115,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 589330121,
+        "share": 0.3981
+      }
+    },
+    "688": {
+      "iso3": "SRB",
+      "year": 2025,
+      "servicesExportsUsd": 17233831625,
+      "servicesShare": 0.3197,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 5723928198,
+        "share": 0.3321
+      }
+    },
+    "690": {
+      "iso3": "SYC",
+      "year": 2025,
+      "servicesExportsUsd": 1915745447,
+      "servicesShare": 0.7693,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 1282942521,
+        "share": 0.6697
+      }
+    },
+    "694": {
+      "iso3": "SLE",
+      "year": 2024,
+      "servicesExportsUsd": 49597718,
+      "servicesShare": 0.031,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 26357914,
+        "share": 0.5314
+      }
+    },
+    "702": {
+      "iso3": "SGP",
+      "year": 2025,
+      "servicesExportsUsd": 422347393782,
+      "servicesShare": 0.3933,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 146251405407,
+        "share": 0.3463
+      }
+    },
+    "703": {
+      "iso3": "SVK",
+      "year": 2025,
+      "servicesExportsUsd": 14702096202,
+      "servicesShare": 0.1119,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 5601205050,
+        "share": 0.381
+      }
+    },
+    "704": {
+      "iso3": "VNM",
+      "year": 2025,
+      "servicesExportsUsd": 30307000000,
+      "servicesShare": 0.06,
+      "topService": null
+    },
+    "705": {
+      "iso3": "SVN",
+      "year": 2025,
+      "servicesExportsUsd": 15278840902,
+      "servicesShare": 0.2424,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 4626436263,
+        "share": 0.3028
+      }
+    },
+    "710": {
+      "iso3": "ZAF",
+      "year": 2025,
+      "servicesExportsUsd": 18050849009,
+      "servicesShare": 0.1342,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 6851363035,
+        "share": 0.3796
+      }
+    },
+    "716": {
+      "iso3": "ZWE",
+      "year": 2024,
+      "servicesExportsUsd": 457117671,
+      "servicesShare": 0.0554,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 202750000,
+        "share": 0.4435
+      }
+    },
+    "724": {
+      "iso3": "ESP",
+      "year": 2025,
+      "servicesExportsUsd": 255992696095,
+      "servicesShare": 0.366,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 119651190198,
+        "share": 0.4674
+      }
+    },
+    "728": {
+      "iso3": "SSD",
+      "year": 2023,
+      "servicesExportsUsd": 484473000,
+      "servicesShare": 0.1077,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 246800000,
+        "share": 0.5094
+      }
+    },
+    "729": {
+      "iso3": "SDN",
+      "year": 2025,
+      "servicesExportsUsd": 271584124,
+      "servicesShare": 0.0933,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 140359868,
+        "share": 0.5168
+      }
+    },
+    "740": {
+      "iso3": "SUR",
+      "year": 2025,
+      "servicesExportsUsd": 218434341,
+      "servicesShare": 0.0687,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 111369813,
+        "share": 0.5099
+      }
+    },
+    "748": {
+      "iso3": "SWZ",
+      "year": 2025,
+      "servicesExportsUsd": 311961787,
+      "servicesShare": 0.1118,
+      "topService": {
+        "label": "Transport",
+        "valueUsd": 117210990,
+        "share": 0.3757
+      }
+    },
+    "752": {
+      "iso3": "SWE",
+      "year": 2025,
+      "servicesExportsUsd": 130728731918,
+      "servicesShare": 0.357,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 56711417817,
+        "share": 0.4338
+      }
+    },
+    "756": {
+      "iso3": "CHE",
+      "year": 2025,
+      "servicesExportsUsd": 196308856153,
+      "servicesShare": 0.2402,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 50824105855,
+        "share": 0.2589
+      }
+    },
+    "762": {
+      "iso3": "TJK",
+      "year": 2025,
+      "servicesExportsUsd": 168191810,
+      "servicesShare": 0.0793,
+      "topService": {
+        "label": "Transport",
+        "valueUsd": 68077030,
+        "share": 0.4048
+      }
+    },
+    "764": {
+      "iso3": "THA",
+      "year": 2025,
+      "servicesExportsUsd": 76251980529,
+      "servicesShare": 0.1853,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 44773219791,
+        "share": 0.5872
+      }
+    },
+    "768": {
+      "iso3": "TGO",
+      "year": 2020,
+      "servicesExportsUsd": 514115545,
+      "servicesShare": 0.2986,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 187302522,
+        "share": 0.3643
+      }
+    },
+    "776": {
+      "iso3": "TON",
+      "year": 2025,
+      "servicesExportsUsd": 106588949,
+      "servicesShare": 0.9047,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 74279563,
+        "share": 0.6969
+      }
+    },
+    "780": {
+      "iso3": "TTO",
+      "year": 2025,
+      "servicesExportsUsd": 1273707497,
+      "servicesShare": 0.1106,
+      "topService": {
+        "label": "Transport",
+        "valueUsd": 469895939,
+        "share": 0.3689
+      }
+    },
+    "784": {
+      "iso3": "ARE",
+      "year": 2025,
+      "servicesExportsUsd": 192452852280,
+      "servicesShare": 0.2558,
+      "topService": {
+        "label": "Transport",
+        "valueUsd": 78420694350,
+        "share": 0.4075
+      }
+    },
+    "788": {
+      "iso3": "TUN",
+      "year": 2025,
+      "servicesExportsUsd": 12369822489,
+      "servicesShare": 0.5845,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 6393327340,
+        "share": 0.5168
+      }
+    },
+    "792": {
+      "iso3": "TUR",
+      "year": 2025,
+      "servicesExportsUsd": 122604000000,
+      "servicesShare": 0.3117,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 59995000000,
+        "share": 0.4893
+      }
+    },
+    "798": {
+      "iso3": "TUV",
+      "year": 2023,
+      "servicesExportsUsd": 10222112,
+      "servicesShare": 0.9726,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 8632989,
+        "share": 0.8445
+      }
+    },
+    "800": {
+      "iso3": "UGA",
+      "year": 2025,
+      "servicesExportsUsd": 2750015633,
+      "servicesShare": 0.1676,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 1777798456,
+        "share": 0.6465
+      }
+    },
+    "804": {
+      "iso3": "UKR",
+      "year": 2025,
+      "servicesExportsUsd": 15904000000,
+      "servicesShare": 0.295,
+      "topService": {
+        "label": "Computer & telecom services",
+        "valueUsd": 6810000000,
+        "share": 0.4282
+      }
+    },
+    "807": {
+      "iso3": "MKD",
+      "year": 2025,
+      "servicesExportsUsd": 3551301132,
+      "servicesShare": 0.3108,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 1393737408,
+        "share": 0.3925
+      }
+    },
+    "818": {
+      "iso3": "EGY",
+      "year": 2025,
+      "servicesExportsUsd": 34068400000,
+      "servicesShare": 0.4456,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 18235600000,
+        "share": 0.5353
+      }
+    },
+    "826": {
+      "iso3": "GBR",
+      "year": 2025,
+      "servicesExportsUsd": 719144937132,
+      "servicesShare": 0.5868,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 282934110041,
+        "share": 0.3934
+      }
+    },
+    "834": {
+      "iso3": "TZA",
+      "year": 2024,
+      "servicesExportsUsd": 6846773016,
+      "servicesShare": 0.4288,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 3903059086,
+        "share": 0.5701
+      }
+    },
+    "840": {
+      "iso3": "USA",
+      "year": 2025,
+      "servicesExportsUsd": 1237894000000,
+      "servicesShare": 0.3609,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 377025000000,
+        "share": 0.3046
+      }
+    },
+    "854": {
+      "iso3": "BFA",
+      "year": 2024,
+      "servicesExportsUsd": 630155357,
+      "servicesShare": 0.0934,
+      "topService": {
+        "label": "Business & other",
+        "valueUsd": 224422210,
+        "share": 0.3561
+      }
+    },
+    "858": {
+      "iso3": "URY",
+      "year": 2025,
+      "servicesExportsUsd": 7384416995,
+      "servicesShare": 0.3143,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 2480951512,
+        "share": 0.336
+      }
+    },
+    "860": {
+      "iso3": "UZB",
+      "year": 2025,
+      "servicesExportsUsd": 9274060899,
+      "servicesShare": 0.2871,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 4670510509,
+        "share": 0.5036
+      }
+    },
+    "862": {
+      "iso3": "VEN",
+      "year": 2025,
+      "servicesExportsUsd": 1137000000,
+      "servicesShare": 0.0437,
+      "topService": {
+        "label": "Transport",
+        "valueUsd": 770000000,
+        "share": 0.6772
+      }
+    },
+    "882": {
+      "iso3": "WSM",
+      "year": 2025,
+      "servicesExportsUsd": 328000429,
+      "servicesShare": 0.9312,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 239099149,
+        "share": 0.729
+      }
+    },
+    "894": {
+      "iso3": "ZMB",
+      "year": 2025,
+      "servicesExportsUsd": 1388167370,
+      "servicesShare": 0.0929,
+      "topService": {
+        "label": "Tourism",
+        "valueUsd": 1063582503,
+        "share": 0.7662
+      }
+    }
+  }
+}
