@@ -40,6 +40,7 @@ export default function WorldMap() {
   const [error, setError] = useState<string | null>(null);
   const [trade, setTrade] = useState<TradeSource | null>(null);
   const [cities, setCities] = useState<City[]>([]);
+  const [showCities, setShowCities] = useState(false);
 
   const svgRef = useRef<SVGSVGElement>(null);
   const gRef = useRef<SVGGElement>(null);
@@ -191,27 +192,29 @@ export default function WorldMap() {
                 </path>
               );
             })}
-            <g aria-label="Largest cities and capitals">
-              {cities.map((city, i) => {
-                const [x, y] = cityPoints[i];
-                return (
-                  <g
-                    key={`${city.name}-${city.country}`}
-                    transform={`translate(${x},${y})`}
-                    className={`city ${city.capital ? "is-capital" : ""} ${city.largest ? "is-major" : ""}`}
-                    onPointerMove={(e) => onMove("city", String(i), e)}
-                    onPointerLeave={() => setHover(null)}
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    {/* Larger invisible target so small dots are easy to hover. */}
-                    <circle className="city-hit" />
-                    {city.capital && <circle className="city-ring" />}
-                    <circle className="city-dot" />
-                    <text className="city-label">{city.name}</text>
-                  </g>
-                );
-              })}
-            </g>
+            {showCities && (
+              <g aria-label="Largest cities and capitals">
+                {cities.map((city, i) => {
+                  const [x, y] = cityPoints[i];
+                  return (
+                    <g
+                      key={`${city.name}-${city.country}`}
+                      transform={`translate(${x},${y})`}
+                      className={`city ${city.capital ? "is-capital" : ""} ${city.largest ? "is-major" : ""}`}
+                      onPointerMove={(e) => onMove("city", String(i), e)}
+                      onPointerLeave={() => setHover(null)}
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      {/* Larger invisible target so small dots are easy to hover. */}
+                      <circle className="city-hit" />
+                      {city.capital && <circle className="city-ring" />}
+                      <circle className="city-dot" />
+                      <text className="city-label">{city.name}</text>
+                    </g>
+                  );
+                })}
+              </g>
+            )}
           </g>
         </svg>
 
@@ -270,6 +273,13 @@ export default function WorldMap() {
         >
           Reset view
         </button>
+        <OptionsMenu
+          showCities={showCities}
+          onShowCitiesChange={(on) => {
+            setShowCities(on);
+            if (!on) setHover((h) => (h?.kind === "city" ? null : h));
+          }}
+        />
         <Legend />
       </div>
 
@@ -348,6 +358,58 @@ function formatUsd(usd: number) {
   if (usd >= 1e9) return `$${(usd / 1e9).toFixed(1)}B`;
   if (usd >= 1e6) return `$${(usd / 1e6).toFixed(1)}M`;
   return `$${Math.round(usd / 1e3)}K`;
+}
+
+function OptionsMenu({
+  showCities,
+  onShowCitiesChange,
+}: {
+  showCities: boolean;
+  onShowCitiesChange: (on: boolean) => void;
+}) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  // Close on outside click or Escape.
+  useEffect(() => {
+    if (!open) return;
+    const onPointer = (e: PointerEvent) => {
+      if (!ref.current?.contains(e.target as Node)) setOpen(false);
+    };
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
+    document.addEventListener("pointerdown", onPointer);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("pointerdown", onPointer);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [open]);
+
+  return (
+    <div ref={ref} className="absolute right-3 top-3 z-20 text-xs">
+      <button
+        onClick={() => setOpen((o) => !o)}
+        aria-expanded={open}
+        aria-haspopup="true"
+        className="rounded-md border border-[var(--border)] bg-[var(--panel)] px-2.5 py-1 hover:bg-[var(--hover)]"
+      >
+        Options
+      </button>
+      {open && (
+        <div className="absolute right-0 mt-1 w-max rounded-md border border-[var(--border)] bg-[var(--panel)] p-2 shadow-lg">
+          <label className="flex cursor-pointer items-center gap-2 rounded px-1.5 py-1 hover:bg-[var(--hover)]">
+            <input
+              type="checkbox"
+              checked={showCities}
+              onChange={(e) => onShowCitiesChange(e.target.checked)}
+              className="accent-[var(--accent)]"
+            />
+            Show Cities
+          </label>
+        </div>
+      )}
+    </div>
+  );
 }
 
 function Legend() {
