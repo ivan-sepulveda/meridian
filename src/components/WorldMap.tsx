@@ -28,8 +28,9 @@ type Hover = {
   flipY: boolean;
 };
 
-// City names appear once zoomed in at least this far.
-const LABEL_ZOOM = 3;
+// Names of the largest cities appear from this zoom; capital-only names from the next.
+const LABEL_ZOOM_MAJOR = 3;
+const LABEL_ZOOM_ALL = 5;
 
 export default function WorldMap() {
   const [features, setFeatures] = useState<CountryFeature[]>([]);
@@ -113,7 +114,8 @@ export default function WorldMap() {
         const svg = svgRef.current;
         if (svg) {
           svg.style.setProperty("--k", String(e.transform.k));
-          svg.dataset.labels = e.transform.k >= LABEL_ZOOM ? "on" : "off";
+          const k = e.transform.k;
+          svg.dataset.labels = k >= LABEL_ZOOM_ALL ? "all" : k >= LABEL_ZOOM_MAJOR ? "major" : "off";
         }
       });
     select(svgRef.current).call(z);
@@ -189,20 +191,21 @@ export default function WorldMap() {
                 </path>
               );
             })}
-            <g aria-label="Largest cities">
+            <g aria-label="Largest cities and capitals">
               {cities.map((city, i) => {
                 const [x, y] = cityPoints[i];
                 return (
                   <g
                     key={`${city.name}-${city.country}`}
                     transform={`translate(${x},${y})`}
-                    className="city"
+                    className={`city ${city.capital ? "is-capital" : ""} ${city.largest ? "is-major" : ""}`}
                     onPointerMove={(e) => onMove("city", String(i), e)}
                     onPointerLeave={() => setHover(null)}
                     onClick={(e) => e.stopPropagation()}
                   >
                     {/* Larger invisible target so small dots are easy to hover. */}
                     <circle className="city-hit" />
+                    {city.capital && <circle className="city-ring" />}
                     <circle className="city-dot" />
                     <text className="city-label">{city.name}</text>
                   </g>
@@ -246,10 +249,18 @@ export default function WorldMap() {
           >
             <div className="font-semibold">{hoveredCity.name}</div>
             <div className="text-[var(--muted)]">{hoveredCity.country}</div>
-            <div className="mt-1 tabular-nums">
-              {formatPopulation(hoveredCity.population)} people{" "}
-              <span className="text-[var(--muted)]">(UN 2025 est.)</span>
-            </div>
+            {hoveredCity.capital && (
+              <div className="mt-1">
+                ★ {hoveredCity.capitalRole ?? "Capital"}
+                {hoveredCity.capitalRole ? ` of ${hoveredCity.country}` : ""}
+              </div>
+            )}
+            {hoveredCity.population !== null && (
+              <div className="mt-1 tabular-nums">
+                {formatPopulation(hoveredCity.population)} people{" "}
+                <span className="text-[var(--muted)]">(UN 2025 est.)</span>
+              </div>
+            )}
           </div>
         )}
 

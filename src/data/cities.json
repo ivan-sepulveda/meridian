@@ -1,5 +1,5 @@
 {
-  "source": "Wikipedia, List of largest cities (UN 2025 population estimates); coordinates from ivan-sepulveda/when-where",
+  "source": "Wikipedia, List of largest cities (UN 2025 population estimates); coordinates from ivan-sepulveda/when-where; capitals from Natural Earth",
   "cities": [
     {
       "name": "Jakarta",
@@ -7,7 +7,10 @@
       "iso3": "IDN",
       "lat": -6.1753,
       "lng": 106.8269,
-      "population": 41913860
+      "population": 41913860,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "Dhaka",
@@ -15,7 +18,10 @@
       "iso3": "BGD",
       "lat": 23.7289,
       "lng": 90.3944,
-      "population": 36585479
+      "population": 36585479,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "Tokyo",
@@ -23,7 +29,10 @@
       "iso3": "JPN",
       "lat": 35.685,
       "lng": 139.7514,
-      "population": 33412512
+      "population": 33412512,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "Delhi",
@@ -31,7 +40,10 @@
       "iso3": "IND",
       "lat": 28.66,
       "lng": 77.23,
-      "population": 30222405
+      "population": 30222405,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "Shanghai",
@@ -39,7 +51,10 @@
       "iso3": "CHN",
       "lat": 31.2325,
       "lng": 121.4692,
-      "population": 29558908
+      "population": 29558908,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Guangzhou",
@@ -47,7 +62,10 @@
       "iso3": "CHN",
       "lat": 23.13,
       "lng": 113.26,
-      "population": 27563372
+      "population": 27563372,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Cairo",
@@ -55,7 +73,10 @@
       "iso3": "EGY",
       "lat": 30.0444,
       "lng": 31.2358,
-      "population": 25566102
+      "population": 25566102,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "Manila",
@@ -63,7 +84,10 @@
       "iso3": "PHL",
       "lat": 14.5958,
       "lng": 120.9772,
-      "population": 24735305
+      "population": 24735305,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "Kolkata",
@@ -71,7 +95,10 @@
       "iso3": "IND",
       "lat": 22.5675,
       "lng": 88.37,
-      "population": 22549738
+      "population": 22549738,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Seoul",
@@ -79,7 +106,10 @@
       "iso3": "KOR",
       "lat": 37.56,
       "lng": 126.99,
-      "population": 22490482
+      "population": 22490482,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "Karachi",
@@ -87,7 +117,10 @@
       "iso3": "PAK",
       "lat": 24.86,
       "lng": 67.01,
-      "population": 21422590
+      "population": 21422590,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Mumbai",
@@ -95,7 +128,10 @@
       "iso3": "IND",
       "lat": 19.0758,
       "lng": 72.8775,
-      "population": 20203056
+      "population": 20203056,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "São Paulo",
@@ -103,7 +139,10 @@
       "iso3": "BRA",
       "lat": -23.5504,
       "lng": -46.6339,
-      "population": 18949790
+      "population": 18949790,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Bangkok",
@@ -111,7 +150,10 @@
       "iso3": "THA",
       "lat": 13.75,
       "lng": 100.5167,
-      "population": 18180280
+      "population": 18180280,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "Mexico City",
@@ -119,7 +161,10 @@
       "iso3": "MEX",
       "lat": 19.3538,
       "lng": -99.1359,
-      "population": 17734212
+      "population": 17734212,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "Beijing",
@@ -127,7 +172,10 @@
       "iso3": "CHN",
       "lat": 39.904,
       "lng": 116.4075,
-      "population": 17013303
+      "population": 17013303,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "Lahore",
@@ -135,7 +183,10 @@
       "iso3": "PAK",
       "lat": 31.5497,
       "lng": 74.3436,
-      "population": 15156430
+      "population": 15156430,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Istanbul",
@@ -143,7 +194,10 @@
       "iso3": "TUR",
       "lat": 41.01,
       "lng": 28.9603,
-      "population": 15014763
+      "population": 15014763,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Moscow",
@@ -151,7 +205,10 @@
       "iso3": "RUS",
       "lat": 55.7506,
       "lng": 37.6175,
-      "population": 14524753
+      "population": 14524753,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "Ho Chi Minh City",
@@ -159,7 +216,10 @@
       "iso3": "VNM",
       "lat": 10.7756,
       "lng": 106.7019,
-      "population": 14052713
+      "population": 14052713,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Buenos Aires",
@@ -167,7 +227,10 @@
       "iso3": "ARG",
       "lat": -34.5997,
       "lng": -58.3819,
-      "population": 14017736
+      "population": 14017736,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "New York City",
@@ -175,7 +238,10 @@
       "iso3": "USA",
       "lat": 40.6943,
       "lng": -73.9249,
-      "population": 13920148
+      "population": 13920148,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Shenzhen",
@@ -183,7 +249,10 @@
       "iso3": "CHN",
       "lat": 22.5467,
       "lng": 114.0544,
-      "population": 13878396
+      "population": 13878396,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Bengaluru",
@@ -191,7 +260,10 @@
       "iso3": "IND",
       "lat": 12.9791,
       "lng": 77.5913,
-      "population": 13187098
+      "population": 13187098,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Osaka",
@@ -199,7 +271,10 @@
       "iso3": "JPN",
       "lat": 34.6938,
       "lng": 135.5021,
-      "population": 12964145
+      "population": 12964145,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Lagos",
@@ -207,7 +282,10 @@
       "iso3": "NGA",
       "lat": 6.4561,
       "lng": 3.3936,
-      "population": 12791699
+      "population": 12791699,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Los Angeles",
@@ -215,7 +293,10 @@
       "iso3": "USA",
       "lat": 34.1141,
       "lng": -118.4068,
-      "population": 12740420
+      "population": 12740420,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Chennai",
@@ -223,7 +304,10 @@
       "iso3": "IND",
       "lat": 13.0825,
       "lng": 80.275,
-      "population": 11153205
+      "population": 11153205,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Kinshasa",
@@ -231,7 +315,10 @@
       "iso3": "COD",
       "lat": -4.3233,
       "lng": 15.3081,
-      "population": 10943641
+      "population": 10943641,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "Bogotá",
@@ -239,7 +326,10 @@
       "iso3": "COL",
       "lat": 4.6097,
       "lng": -74.0817,
-      "population": 10624315
+      "population": 10624315,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "Lima",
@@ -247,7 +337,10 @@
       "iso3": "PER",
       "lat": -12.06,
       "lng": -77.0375,
-      "population": 10580241
+      "population": 10580241,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "London",
@@ -255,7 +348,10 @@
       "iso3": "GBR",
       "lat": 51.5072,
       "lng": -0.1275,
-      "population": 10416420
+      "population": 10416420,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "Rio de Janeiro",
@@ -263,7 +359,10 @@
       "iso3": "BRA",
       "lat": -22.9111,
       "lng": -43.2056,
-      "population": 9500336
+      "population": 9500336,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Paris",
@@ -271,7 +370,10 @@
       "iso3": "FRA",
       "lat": 48.8567,
       "lng": 2.3522,
-      "population": 9381921
+      "population": 9381921,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "Hyderabad",
@@ -279,7 +381,10 @@
       "iso3": "IND",
       "lat": 17.3617,
       "lng": 78.4747,
-      "population": 9190795
+      "population": 9190795,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Tehran",
@@ -287,7 +392,10 @@
       "iso3": "IRN",
       "lat": 35.6889,
       "lng": 51.3897,
-      "population": 9174964
+      "population": 9174964,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "Taipei",
@@ -295,7 +403,10 @@
       "iso3": "TWN",
       "lat": 25.0375,
       "lng": 121.5625,
-      "population": 9137000
+      "population": 9137000,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "Luanda",
@@ -303,7 +414,10 @@
       "iso3": "AGO",
       "lat": -8.8383,
       "lng": 13.2344,
-      "population": 9051000
+      "population": 9051000,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "Bandung",
@@ -311,7 +425,10 @@
       "iso3": "IDN",
       "lat": -6.9218,
       "lng": 107.6071,
-      "population": 8909104
+      "population": 8909104,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Chicago",
@@ -319,7 +436,10 @@
       "iso3": "USA",
       "lat": 41.8375,
       "lng": -87.6866,
-      "population": 8864000
+      "population": 8864000,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Chengdu",
@@ -327,7 +447,10 @@
       "iso3": "CHN",
       "lat": 30.66,
       "lng": 104.0633,
-      "population": 8813000
+      "population": 8813000,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Kuala Lumpur",
@@ -335,7 +458,10 @@
       "iso3": "MYS",
       "lat": 3.1478,
       "lng": 101.6953,
-      "population": 8443731
+      "population": 8443731,
+      "largest": true,
+      "capital": true,
+      "capitalRole": "Official capital"
     },
     {
       "name": "Dar es Salaam",
@@ -343,7 +469,10 @@
       "iso3": "TZA",
       "lat": -6.8161,
       "lng": 39.2803,
-      "population": 7795114
+      "population": 7795114,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Suzhou",
@@ -351,7 +480,10 @@
       "iso3": "CHN",
       "lat": 31.3,
       "lng": 120.6194,
-      "population": 7731101
+      "population": 7731101,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Ahmedabad",
@@ -359,7 +491,10 @@
       "iso3": "IND",
       "lat": 23.0219,
       "lng": 72.5797,
-      "population": 7632408
+      "population": 7632408,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Hangzhou",
@@ -367,7 +502,10 @@
       "iso3": "CHN",
       "lat": 30.25,
       "lng": 120.1675,
-      "population": 7500208
+      "population": 7500208,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Xi'an",
@@ -375,7 +513,10 @@
       "iso3": "CHN",
       "lat": 34.2611,
       "lng": 108.9422,
-      "population": 7444000
+      "population": 7444000,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Hong Kong",
@@ -383,7 +524,10 @@
       "iso3": "HKG",
       "lat": 22.2783,
       "lng": 114.1586,
-      "population": 7429000
+      "population": 7429000,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Wuhan",
@@ -391,7 +535,10 @@
       "iso3": "CHN",
       "lat": 30.595,
       "lng": 114.2975,
-      "population": 7363548
+      "population": 7363548,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Dongguan",
@@ -399,7 +546,10 @@
       "iso3": "CHN",
       "lat": 23.0475,
       "lng": 113.7493,
-      "population": 7360000
+      "population": 7360000,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Tianjin",
@@ -407,7 +557,10 @@
       "iso3": "CHN",
       "lat": 39.1467,
       "lng": 117.2056,
-      "population": 7285342
+      "population": 7285342,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Alexandria",
@@ -415,7 +568,10 @@
       "iso3": "EGY",
       "lat": 31.1975,
       "lng": 29.8925,
-      "population": 7266957
+      "population": 7266957,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Foshan",
@@ -423,7 +579,10 @@
       "iso3": "CHN",
       "lat": 23.0292,
       "lng": 113.1056,
-      "population": 7236000
+      "population": 7236000,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Nagoya",
@@ -431,7 +590,10 @@
       "iso3": "JPN",
       "lat": 35.1814,
       "lng": 136.9064,
-      "population": 7146160
+      "population": 7146160,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Johannesburg",
@@ -439,7 +601,10 @@
       "iso3": "ZAF",
       "lat": -26.2044,
       "lng": 28.0416,
-      "population": 7077175
+      "population": 7077175,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Chongqing",
@@ -447,7 +612,10 @@
       "iso3": "CHN",
       "lat": 29.55,
       "lng": 106.5069,
-      "population": 7071073
+      "population": 7071073,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Shenyang",
@@ -455,7 +623,10 @@
       "iso3": "CHN",
       "lat": 41.8025,
       "lng": 123.4281,
-      "population": 6921000
+      "population": 6921000,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Riyadh",
@@ -463,7 +634,10 @@
       "iso3": "SAU",
       "lat": 24.65,
       "lng": 46.71,
-      "population": 6916417
+      "population": 6916417,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "Surat",
@@ -471,7 +645,10 @@
       "iso3": "IND",
       "lat": 21.205,
       "lng": 72.84,
-      "population": 6908925
+      "population": 6908925,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Surabaya",
@@ -479,7 +656,10 @@
       "iso3": "IDN",
       "lat": -7.2463,
       "lng": 112.7378,
-      "population": 6843503
+      "population": 6843503,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Pune",
@@ -487,7 +667,10 @@
       "iso3": "IND",
       "lat": 18.5211,
       "lng": 73.8553,
-      "population": 6817951
+      "population": 6817951,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Baghdad",
@@ -495,7 +678,10 @@
       "iso3": "IRQ",
       "lat": 33.3153,
       "lng": 44.3661,
-      "population": 6812000
+      "population": 6812000,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "Khartoum",
@@ -503,7 +689,10 @@
       "iso3": "SDN",
       "lat": 15.6031,
       "lng": 32.5265,
-      "population": 6809355
+      "population": 6809355,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "Nanjing",
@@ -511,7 +700,10 @@
       "iso3": "CHN",
       "lat": 32.0608,
       "lng": 118.7789,
-      "population": 6800676
+      "population": 6800676,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Santiago",
@@ -519,7 +711,10 @@
       "iso3": "CHL",
       "lat": -33.4375,
       "lng": -70.65,
-      "population": 6726045
+      "population": 6726045,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "Addis Ababa",
@@ -527,7 +722,10 @@
       "iso3": "ETH",
       "lat": 9.0358,
       "lng": 38.7525,
-      "population": 6706000
+      "population": 6706000,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "Madrid",
@@ -535,7 +733,10 @@
       "iso3": "ESP",
       "lat": 40.4169,
       "lng": -3.7033,
-      "population": 6497000
+      "population": 6497000,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "Harbin",
@@ -543,7 +744,10 @@
       "iso3": "CHN",
       "lat": 45.75,
       "lng": 126.6333,
-      "population": 6115000
+      "population": 6115000,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Houston",
@@ -551,7 +755,10 @@
       "iso3": "USA",
       "lat": 29.786,
       "lng": -95.3885,
-      "population": 6115000
+      "population": 6115000,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Dallas",
@@ -559,7 +766,10 @@
       "iso3": "USA",
       "lat": 32.7935,
       "lng": -96.7667,
-      "population": 6099000
+      "population": 6099000,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Toronto",
@@ -567,7 +777,10 @@
       "iso3": "CAN",
       "lat": 43.7417,
       "lng": -79.3733,
-      "population": 6082000
+      "population": 6082000,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Miami",
@@ -575,7 +788,10 @@
       "iso3": "USA",
       "lat": 25.784,
       "lng": -80.2101,
-      "population": 6036000
+      "population": 6036000,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Belo Horizonte",
@@ -583,7 +799,10 @@
       "iso3": "BRA",
       "lat": -19.9281,
       "lng": -43.9419,
-      "population": 5972000
+      "population": 5972000,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Singapore",
@@ -591,7 +810,10 @@
       "iso3": "SGP",
       "lat": 1.3,
       "lng": 103.8,
-      "population": 5792000
+      "population": 5792000,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "Philadelphia",
@@ -599,7 +821,10 @@
       "iso3": "USA",
       "lat": 40.0077,
       "lng": -75.1339,
-      "population": 5695000
+      "population": 5695000,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Atlanta",
@@ -607,7 +832,10 @@
       "iso3": "USA",
       "lat": 33.7628,
       "lng": -84.422,
-      "population": 5572000
+      "population": 5572000,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Fukuoka",
@@ -615,7 +843,10 @@
       "iso3": "JPN",
       "lat": 33.5901,
       "lng": 130.4017,
-      "population": 5551000
+      "population": 5551000,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Barcelona",
@@ -623,7 +854,10 @@
       "iso3": "ESP",
       "lat": 41.3825,
       "lng": 2.1769,
-      "population": 5494000
+      "population": 5494000,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Saint Petersburg",
@@ -631,7 +865,10 @@
       "iso3": "RUS",
       "lat": 59.95,
       "lng": 30.3167,
-      "population": 5383000
+      "population": 5383000,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Qingdao",
@@ -639,7 +876,10 @@
       "iso3": "CHN",
       "lat": 36.1167,
       "lng": 120.4,
-      "population": 5381000
+      "population": 5381000,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Dalian",
@@ -647,7 +887,10 @@
       "iso3": "CHN",
       "lat": 38.9,
       "lng": 121.6,
-      "population": 5300000
+      "population": 5300000,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Washington, D.C.",
@@ -655,7 +898,10 @@
       "iso3": "USA",
       "lat": 38.9047,
       "lng": -77.0163,
-      "population": 5207000
+      "population": 5207000,
+      "largest": true,
+      "capital": true,
+      "capitalRole": null
     },
     {
       "name": "Yangon",
@@ -663,7 +909,10 @@
       "iso3": "MMR",
       "lat": 16.8053,
       "lng": 96.1561,
-      "population": 5157000
+      "population": 5157000,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Jinan",
@@ -671,7 +920,10 @@
       "iso3": "CHN",
       "lat": 36.6667,
       "lng": 116.9833,
-      "population": 5052000
+      "population": 5052000,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
     },
     {
       "name": "Guadalajara",
@@ -679,7 +931,1891 @@
       "iso3": "MEX",
       "lat": 20.6764,
       "lng": -103.3422,
-      "population": 5023000
+      "population": 5023000,
+      "largest": true,
+      "capital": false,
+      "capitalRole": null
+    },
+    {
+      "name": "Abidjan",
+      "country": "Ivory Coast",
+      "iso3": "CIV",
+      "lat": 5.3219,
+      "lng": -4.042,
+      "capitalRole": "Seat of government",
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Abu Dhabi",
+      "country": "United Arab Emirates",
+      "iso3": "ARE",
+      "lat": 24.4667,
+      "lng": 54.3666,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Abuja",
+      "country": "Nigeria",
+      "iso3": "NGA",
+      "lat": 9.0853,
+      "lng": 7.5314,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Accra",
+      "country": "Ghana",
+      "iso3": "GHA",
+      "lat": 5.552,
+      "lng": -0.2187,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Algiers",
+      "country": "Algeria",
+      "iso3": "DZA",
+      "lat": 36.765,
+      "lng": 3.0486,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Amman",
+      "country": "Jordan",
+      "iso3": "JOR",
+      "lat": 31.952,
+      "lng": 35.9314,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Amsterdam",
+      "country": "Netherlands",
+      "iso3": "NLD",
+      "lat": 52.3519,
+      "lng": 4.9147,
+      "capitalRole": "Constitutional capital",
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Ankara",
+      "country": "Turkey",
+      "iso3": "TUR",
+      "lat": 39.9292,
+      "lng": 32.8624,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Antananarivo",
+      "country": "Madagascar",
+      "iso3": "MDG",
+      "lat": -18.9147,
+      "lng": 47.5147,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Apia",
+      "country": "Samoa",
+      "iso3": "WSM",
+      "lat": -13.8415,
+      "lng": -171.7386,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Ashgabat",
+      "country": "Turkmenistan",
+      "iso3": "TKM",
+      "lat": 37.95,
+      "lng": 58.3833,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Asmara",
+      "country": "Eritrea",
+      "iso3": "ERI",
+      "lat": 15.3333,
+      "lng": 38.9333,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Asunción",
+      "country": "Paraguay",
+      "iso3": "PRY",
+      "lat": -25.2945,
+      "lng": -57.6435,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Athens",
+      "country": "Greece",
+      "iso3": "GRC",
+      "lat": 37.9853,
+      "lng": 23.7314,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Baku",
+      "country": "Azerbaijan",
+      "iso3": "AZE",
+      "lat": 40.3972,
+      "lng": 49.8603,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Bamako",
+      "country": "Mali",
+      "iso3": "MLI",
+      "lat": 12.652,
+      "lng": -8.002,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Bandar Seri Begawan",
+      "country": "Brunei",
+      "iso3": "BRN",
+      "lat": 4.8833,
+      "lng": 114.9333,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Bangui",
+      "country": "Central African Republic",
+      "iso3": "CAF",
+      "lat": 4.3666,
+      "lng": 18.5583,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Banjul",
+      "country": "The Gambia",
+      "iso3": "GMB",
+      "lat": 13.4539,
+      "lng": -16.5917,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Basseterre",
+      "country": "Saint Kitts and Nevis",
+      "iso3": "KNA",
+      "lat": 17.302,
+      "lng": -62.717,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Beirut",
+      "country": "Lebanon",
+      "iso3": "LBN",
+      "lat": 33.8739,
+      "lng": 35.5078,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Belgrade",
+      "country": "Serbia",
+      "iso3": "SRB",
+      "lat": 44.8206,
+      "lng": 20.466,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Belmopan",
+      "country": "Belize",
+      "iso3": "BLZ",
+      "lat": 17.252,
+      "lng": -88.7671,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Berlin",
+      "country": "Germany",
+      "iso3": "DEU",
+      "lat": 52.5238,
+      "lng": 13.3996,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Bern",
+      "country": "Switzerland",
+      "iso3": "CHE",
+      "lat": 46.9167,
+      "lng": 7.467,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Bishkek",
+      "country": "Kyrgyzstan",
+      "iso3": "KGZ",
+      "lat": 42.875,
+      "lng": 74.5833,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Bissau",
+      "country": "Guinea Bissau",
+      "iso3": "GNB",
+      "lat": 11.865,
+      "lng": -15.5984,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Bloemfontein",
+      "country": "South Africa",
+      "iso3": "ZAF",
+      "lat": -29.12,
+      "lng": 26.2299,
+      "capitalRole": "Judicial capital",
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Brasília",
+      "country": "Brazil",
+      "iso3": "BRA",
+      "lat": -15.7814,
+      "lng": -47.918,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Bratislava",
+      "country": "Slovakia",
+      "iso3": "SVK",
+      "lat": 48.15,
+      "lng": 17.117,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Brazzaville",
+      "country": "Congo (Brazzaville)",
+      "iso3": "COG",
+      "lat": -4.2572,
+      "lng": 15.2827,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Bridgetown",
+      "country": "Barbados",
+      "iso3": "BRB",
+      "lat": 13.102,
+      "lng": -59.6165,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Brussels",
+      "country": "Belgium",
+      "iso3": "BEL",
+      "lat": 50.8353,
+      "lng": 4.3314,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Bucharest",
+      "country": "Romania",
+      "iso3": "ROU",
+      "lat": 44.4353,
+      "lng": 26.098,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Budapest",
+      "country": "Hungary",
+      "iso3": "HUN",
+      "lat": 47.502,
+      "lng": 19.0814,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Bujumbura",
+      "country": "Burundi",
+      "iso3": "BDI",
+      "lat": -3.3761,
+      "lng": 29.36,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Canberra",
+      "country": "Australia",
+      "iso3": "AUS",
+      "lat": -35.283,
+      "lng": 149.129,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Cape Town",
+      "country": "South Africa",
+      "iso3": "ZAF",
+      "lat": -33.9181,
+      "lng": 18.433,
+      "capitalRole": "Legislative capital",
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Caracas",
+      "country": "Venezuela",
+      "iso3": "VEN",
+      "lat": 10.5029,
+      "lng": -66.919,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Castries",
+      "country": "Saint Lucia",
+      "iso3": "LCA",
+      "lat": 14.002,
+      "lng": -61.0,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Chișinău",
+      "country": "Moldova",
+      "iso3": "MDA",
+      "lat": 47.005,
+      "lng": 28.8577,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Colombo",
+      "country": "Sri Lanka",
+      "iso3": "LKA",
+      "lat": 6.932,
+      "lng": 79.8578,
+      "capitalRole": "Executive capital",
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Conakry",
+      "country": "Guinea",
+      "iso3": "GIN",
+      "lat": 9.5335,
+      "lng": -13.6822,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Cotonou",
+      "country": "Benin",
+      "iso3": "BEN",
+      "lat": 6.402,
+      "lng": 2.518,
+      "capitalRole": "Seat of government",
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Dakar",
+      "country": "Senegal",
+      "iso3": "SEN",
+      "lat": 14.7178,
+      "lng": -17.4751,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Damascus",
+      "country": "Syria",
+      "iso3": "SYR",
+      "lat": 33.502,
+      "lng": 36.2981,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Dili",
+      "country": "East Timor",
+      "iso3": "TLS",
+      "lat": -8.5594,
+      "lng": 125.5795,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Djibouti",
+      "country": "Djibouti",
+      "iso3": "DJI",
+      "lat": 11.595,
+      "lng": 43.148,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Dodoma",
+      "country": "Tanzania",
+      "iso3": "TZA",
+      "lat": -6.1833,
+      "lng": 35.75,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Doha",
+      "country": "Qatar",
+      "iso3": "QAT",
+      "lat": 25.2866,
+      "lng": 51.533,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Dublin",
+      "country": "Ireland",
+      "iso3": "IRL",
+      "lat": 53.335,
+      "lng": -6.2509,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Dushanbe",
+      "country": "Tajikistan",
+      "iso3": "TJK",
+      "lat": 38.56,
+      "lng": 68.7739,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Freetown",
+      "country": "Sierra Leone",
+      "iso3": "SLE",
+      "lat": 8.472,
+      "lng": -13.2362,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Funafuti",
+      "country": "Tuvalu",
+      "iso3": "TUV",
+      "lat": -8.5167,
+      "lng": 179.2166,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Gaborone",
+      "country": "Botswana",
+      "iso3": "BWA",
+      "lat": -24.6463,
+      "lng": 25.9119,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Georgetown",
+      "country": "Guyana",
+      "iso3": "GUY",
+      "lat": 6.802,
+      "lng": -58.167,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Guatemala City",
+      "country": "Guatemala",
+      "iso3": "GTM",
+      "lat": 14.6231,
+      "lng": -90.5289,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Hanoi",
+      "country": "Vietnam",
+      "iso3": "VNM",
+      "lat": 21.0353,
+      "lng": 105.8481,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Harare",
+      "country": "Zimbabwe",
+      "iso3": "ZWE",
+      "lat": -17.8158,
+      "lng": 31.0428,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Hargeisa",
+      "country": "Somaliland",
+      "iso3": "SOL",
+      "lat": 9.56,
+      "lng": 44.0653,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Havana",
+      "country": "Cuba",
+      "iso3": "CUB",
+      "lat": 23.1339,
+      "lng": -82.3661,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Helsinki",
+      "country": "Finland",
+      "iso3": "FIN",
+      "lat": 60.1775,
+      "lng": 24.9322,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Honiara",
+      "country": "Solomon Islands",
+      "iso3": "SLB",
+      "lat": -9.438,
+      "lng": 159.9498,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Islamabad",
+      "country": "Pakistan",
+      "iso3": "PAK",
+      "lat": 33.7019,
+      "lng": 73.1647,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Jerusalem",
+      "country": "Israel",
+      "iso3": "ISR",
+      "lat": 31.7784,
+      "lng": 35.2066,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Juba",
+      "country": "South Sudan",
+      "iso3": "SSD",
+      "lat": 4.83,
+      "lng": 31.58,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Kabul",
+      "country": "Afghanistan",
+      "iso3": "AFG",
+      "lat": 34.5186,
+      "lng": 69.1813,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Kampala",
+      "country": "Uganda",
+      "iso3": "UGA",
+      "lat": 0.3186,
+      "lng": 32.5814,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Kathmandu",
+      "country": "Nepal",
+      "iso3": "NPL",
+      "lat": 27.7186,
+      "lng": 85.3147,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Kigali",
+      "country": "Rwanda",
+      "iso3": "RWA",
+      "lat": -1.9516,
+      "lng": 30.0586,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Kingston",
+      "country": "Jamaica",
+      "iso3": "JAM",
+      "lat": 17.9771,
+      "lng": -76.7674,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Kingstown",
+      "country": "Saint Vincent and the Grenadines",
+      "iso3": "VCT",
+      "lat": 13.1483,
+      "lng": -61.2121,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Kuwait City",
+      "country": "Kuwait",
+      "iso3": "KWT",
+      "lat": 29.3717,
+      "lng": 47.9764,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Kyiv",
+      "country": "Ukraine",
+      "iso3": "UKR",
+      "lat": 50.4353,
+      "lng": 30.5147,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "København",
+      "country": "Denmark",
+      "iso3": "DNK",
+      "lat": 55.6805,
+      "lng": 12.5615,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "La Paz",
+      "country": "Bolivia",
+      "iso3": "BOL",
+      "lat": -16.496,
+      "lng": -68.1519,
+      "capitalRole": "Seat of government",
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Libreville",
+      "country": "Gabon",
+      "iso3": "GAB",
+      "lat": 0.3854,
+      "lng": 9.458,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Lilongwe",
+      "country": "Malawi",
+      "iso3": "MWI",
+      "lat": -13.9833,
+      "lng": 33.7833,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Lisbon",
+      "country": "Portugal",
+      "iso3": "PRT",
+      "lat": 38.7247,
+      "lng": -9.1468,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Ljubljana",
+      "country": "Slovenia",
+      "iso3": "SVN",
+      "lat": 46.0553,
+      "lng": 14.515,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Lobamba",
+      "country": "eSwatini",
+      "iso3": "SWZ",
+      "lat": -26.4667,
+      "lng": 31.2,
+      "capitalRole": "Legislative & royal capital",
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Lomé",
+      "country": "Togo",
+      "iso3": "TGO",
+      "lat": 6.1339,
+      "lng": 1.2208,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Lusaka",
+      "country": "Zambia",
+      "iso3": "ZMB",
+      "lat": -15.4147,
+      "lng": 28.2814,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Luxembourg",
+      "country": "Luxembourg",
+      "iso3": "LUX",
+      "lat": 49.6117,
+      "lng": 6.13,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Majuro",
+      "country": "Marshall Islands",
+      "iso3": "MHL",
+      "lat": 7.103,
+      "lng": 171.38,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Malabo",
+      "country": "Equatorial Guinea",
+      "iso3": "GNQ",
+      "lat": 3.75,
+      "lng": 8.7833,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Malé",
+      "country": "Maldives",
+      "iso3": "MDV",
+      "lat": 4.1667,
+      "lng": 73.4999,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Managua",
+      "country": "Nicaragua",
+      "iso3": "NIC",
+      "lat": 12.155,
+      "lng": -86.2704,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Manama",
+      "country": "Bahrain",
+      "iso3": "BHR",
+      "lat": 26.2361,
+      "lng": 50.5831,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Maputo",
+      "country": "Mozambique",
+      "iso3": "MOZ",
+      "lat": -25.9533,
+      "lng": 32.5872,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Maseru",
+      "country": "Lesotho",
+      "iso3": "LSO",
+      "lat": -29.3167,
+      "lng": 27.4833,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Mbabane",
+      "country": "eSwatini",
+      "iso3": "SWZ",
+      "lat": -26.3167,
+      "lng": 31.1333,
+      "capitalRole": "Administrative capital",
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Melekeok",
+      "country": "Palau",
+      "iso3": "PLW",
+      "lat": 7.4874,
+      "lng": 134.6265,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Minsk",
+      "country": "Belarus",
+      "iso3": "BLR",
+      "lat": 53.9019,
+      "lng": 27.5647,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Mogadishu",
+      "country": "Somalia",
+      "iso3": "SOM",
+      "lat": 2.0686,
+      "lng": 45.3647,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Monrovia",
+      "country": "Liberia",
+      "iso3": "LBR",
+      "lat": 6.3146,
+      "lng": -10.7997,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Montevideo",
+      "country": "Uruguay",
+      "iso3": "URY",
+      "lat": -34.8561,
+      "lng": -56.173,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Moroni",
+      "country": "Comoros",
+      "iso3": "COM",
+      "lat": -11.7042,
+      "lng": 43.2402,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Muscat",
+      "country": "Oman",
+      "iso3": "OMN",
+      "lat": 23.6133,
+      "lng": 58.5933,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "N'Djamena",
+      "country": "Chad",
+      "iso3": "TCD",
+      "lat": 12.115,
+      "lng": 15.0472,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Nairobi",
+      "country": "Kenya",
+      "iso3": "KEN",
+      "lat": -1.2814,
+      "lng": 36.8147,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Nassau",
+      "country": "The Bahamas",
+      "iso3": "BHS",
+      "lat": 25.0834,
+      "lng": -77.35,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Naypyidaw",
+      "country": "Myanmar",
+      "iso3": "MMR",
+      "lat": 19.7685,
+      "lng": 96.1167,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Niamey",
+      "country": "Niger",
+      "iso3": "NER",
+      "lat": 13.5187,
+      "lng": 2.1147,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Nicosia",
+      "country": "Cyprus",
+      "iso3": "CYP",
+      "lat": 35.1667,
+      "lng": 33.3666,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Nouakchott",
+      "country": "Mauritania",
+      "iso3": "MRT",
+      "lat": 18.0864,
+      "lng": -15.9753,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Nuku'alofa",
+      "country": "Tonga",
+      "iso3": "TON",
+      "lat": -21.1385,
+      "lng": -175.2206,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Nur-Sultan",
+      "country": "Kazakhstan",
+      "iso3": "KAZ",
+      "lat": 51.1811,
+      "lng": 71.4278,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Oslo",
+      "country": "Norway",
+      "iso3": "NOR",
+      "lat": 59.9186,
+      "lng": 10.748,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Ottawa",
+      "country": "Canada",
+      "iso3": "CAN",
+      "lat": 45.4186,
+      "lng": -75.702,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Ouagadougou",
+      "country": "Burkina Faso",
+      "iso3": "BFA",
+      "lat": 12.3723,
+      "lng": -1.5267,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Palikir",
+      "country": "Federated States of Micronesia",
+      "iso3": "FSM",
+      "lat": 6.9166,
+      "lng": 158.15,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Panama City",
+      "country": "Panama",
+      "iso3": "PAN",
+      "lat": 8.97,
+      "lng": -79.535,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Paramaribo",
+      "country": "Suriname",
+      "iso3": "SUR",
+      "lat": 5.835,
+      "lng": -55.167,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Phnom Penh",
+      "country": "Cambodia",
+      "iso3": "KHM",
+      "lat": 11.552,
+      "lng": 104.9147,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Podgorica",
+      "country": "Montenegro",
+      "iso3": "MNE",
+      "lat": 42.466,
+      "lng": 19.2663,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Port Louis",
+      "country": "Mauritius",
+      "iso3": "MUS",
+      "lat": -20.1666,
+      "lng": 57.5,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Port Moresby",
+      "country": "Papua New Guinea",
+      "iso3": "PNG",
+      "lat": -9.4647,
+      "lng": 147.1925,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Port Vila",
+      "country": "Vanuatu",
+      "iso3": "VUT",
+      "lat": -17.7334,
+      "lng": 168.3166,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Port-au-Prince",
+      "country": "Haiti",
+      "iso3": "HTI",
+      "lat": 18.543,
+      "lng": -72.338,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Port-of-Spain",
+      "country": "Trinidad and Tobago",
+      "iso3": "TTO",
+      "lat": 10.652,
+      "lng": -61.517,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Porto-Novo",
+      "country": "Benin",
+      "iso3": "BEN",
+      "lat": 6.4833,
+      "lng": 2.6166,
+      "capitalRole": "Official capital",
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Prague",
+      "country": "Czechia",
+      "iso3": "CZE",
+      "lat": 50.0853,
+      "lng": 14.464,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Praia",
+      "country": "Cape Verde",
+      "iso3": "CPV",
+      "lat": 14.9167,
+      "lng": -23.5167,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Pretoria",
+      "country": "South Africa",
+      "iso3": "ZAF",
+      "lat": -25.705,
+      "lng": 28.2275,
+      "capitalRole": "Executive capital",
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Pristina",
+      "country": "Kosovo",
+      "iso3": "KOS",
+      "lat": 42.6667,
+      "lng": 21.166,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Putrajaya",
+      "country": "Malaysia",
+      "iso3": "MYS",
+      "lat": 2.914,
+      "lng": 101.7019,
+      "capitalRole": "Administrative capital",
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Pyongyang",
+      "country": "North Korea",
+      "iso3": "PRK",
+      "lat": 39.0214,
+      "lng": 125.7527,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Quito",
+      "country": "Ecuador",
+      "iso3": "ECU",
+      "lat": -0.213,
+      "lng": -78.502,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Rabat",
+      "country": "Morocco",
+      "iso3": "MAR",
+      "lat": 34.0253,
+      "lng": -6.8364,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Reykjavík",
+      "country": "Iceland",
+      "iso3": "ISL",
+      "lat": 64.15,
+      "lng": -21.95,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Riga",
+      "country": "Latvia",
+      "iso3": "LVA",
+      "lat": 56.95,
+      "lng": 24.1,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Rome",
+      "country": "Italy",
+      "iso3": "ITA",
+      "lat": 41.8979,
+      "lng": 12.4813,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Roseau",
+      "country": "Dominica",
+      "iso3": "DMA",
+      "lat": 15.301,
+      "lng": -61.387,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Saint George's",
+      "country": "Grenada",
+      "iso3": "GRD",
+      "lat": 12.0526,
+      "lng": -61.7416,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Saint John's",
+      "country": "Antigua and Barbuda",
+      "iso3": "ATG",
+      "lat": 17.118,
+      "lng": -61.85,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "San José",
+      "country": "Costa Rica",
+      "iso3": "CRI",
+      "lat": 9.937,
+      "lng": -84.086,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "San Salvador",
+      "country": "El Salvador",
+      "iso3": "SLV",
+      "lat": 13.7119,
+      "lng": -89.205,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Sanaa",
+      "country": "Yemen",
+      "iso3": "YEM",
+      "lat": 15.3567,
+      "lng": 44.2046,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Santo Domingo",
+      "country": "Dominican Republic",
+      "iso3": "DOM",
+      "lat": 18.472,
+      "lng": -69.902,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Sarajevo",
+      "country": "Bosnia and Herzegovina",
+      "iso3": "BIH",
+      "lat": 43.85,
+      "lng": 18.383,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Skopje",
+      "country": "North Macedonia",
+      "iso3": "MKD",
+      "lat": 42.0,
+      "lng": 21.4335,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Sofia",
+      "country": "Bulgaria",
+      "iso3": "BGR",
+      "lat": 42.6853,
+      "lng": 23.3147,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Sri Jayawardenepura Kotte",
+      "country": "Sri Lanka",
+      "iso3": "LKA",
+      "lat": 6.9,
+      "lng": 79.95,
+      "capitalRole": "Legislative capital",
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Stockholm",
+      "country": "Sweden",
+      "iso3": "SWE",
+      "lat": 59.3527,
+      "lng": 18.0954,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Sucre",
+      "country": "Bolivia",
+      "iso3": "BOL",
+      "lat": -19.041,
+      "lng": -65.2595,
+      "capitalRole": "Constitutional capital",
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Suva",
+      "country": "Fiji",
+      "iso3": "FJI",
+      "lat": -18.133,
+      "lng": 178.4417,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "São Tomé",
+      "country": "Sao Tome and Principe",
+      "iso3": "STP",
+      "lat": 0.3334,
+      "lng": 6.7333,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Tallinn",
+      "country": "Estonia",
+      "iso3": "EST",
+      "lat": 59.4339,
+      "lng": 24.728,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Tarawa",
+      "country": "Kiribati",
+      "iso3": "KIR",
+      "lat": 1.3382,
+      "lng": 173.0176,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Tashkent",
+      "country": "Uzbekistan",
+      "iso3": "UZB",
+      "lat": 41.3136,
+      "lng": 69.293,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Tbilisi",
+      "country": "Georgia",
+      "iso3": "GEO",
+      "lat": 41.727,
+      "lng": 44.7888,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Tegucigalpa",
+      "country": "Honduras",
+      "iso3": "HND",
+      "lat": 14.104,
+      "lng": -87.2195,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "The Hague",
+      "country": "Netherlands",
+      "iso3": "NLD",
+      "lat": 52.08,
+      "lng": 4.27,
+      "capitalRole": "Seat of government",
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Thimphu",
+      "country": "Bhutan",
+      "iso3": "BTN",
+      "lat": 27.473,
+      "lng": 89.639,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Tirana",
+      "country": "Albania",
+      "iso3": "ALB",
+      "lat": 41.3275,
+      "lng": 19.8189,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Tripoli",
+      "country": "Libya",
+      "iso3": "LBY",
+      "lat": 32.8925,
+      "lng": 13.18,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Tunis",
+      "country": "Tunisia",
+      "iso3": "TUN",
+      "lat": 36.8028,
+      "lng": 10.1797,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Ulaanbaatar",
+      "country": "Mongolia",
+      "iso3": "MNG",
+      "lat": 47.9186,
+      "lng": 106.9147,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Valletta",
+      "country": "Malta",
+      "iso3": "MLT",
+      "lat": 35.8997,
+      "lng": 14.5147,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Victoria",
+      "country": "Seychelles",
+      "iso3": "SYC",
+      "lat": -4.6166,
+      "lng": 55.45,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Vienna",
+      "country": "Austria",
+      "iso3": "AUT",
+      "lat": 48.202,
+      "lng": 16.3647,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Vientiane",
+      "country": "Laos",
+      "iso3": "LAO",
+      "lat": 17.9667,
+      "lng": 102.6,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Vilnius",
+      "country": "Lithuania",
+      "iso3": "LTU",
+      "lat": 54.6834,
+      "lng": 25.3166,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Warsaw",
+      "country": "Poland",
+      "iso3": "POL",
+      "lat": 52.2519,
+      "lng": 20.9981,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Wellington",
+      "country": "New Zealand",
+      "iso3": "NZL",
+      "lat": -41.3,
+      "lng": 174.7833,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Windhoek",
+      "country": "Namibia",
+      "iso3": "NAM",
+      "lat": -22.57,
+      "lng": 17.0835,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Yamoussoukro",
+      "country": "Ivory Coast",
+      "iso3": "CIV",
+      "lat": 6.8184,
+      "lng": -5.2755,
+      "capitalRole": "Official capital",
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Yaoundé",
+      "country": "Cameroon",
+      "iso3": "CMR",
+      "lat": 3.8686,
+      "lng": 11.5147,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Yerevan",
+      "country": "Armenia",
+      "iso3": "ARM",
+      "lat": 40.1831,
+      "lng": 44.5116,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
+    },
+    {
+      "name": "Zagreb",
+      "country": "Croatia",
+      "iso3": "HRV",
+      "lat": 45.8,
+      "lng": 16.0,
+      "capitalRole": null,
+      "population": null,
+      "largest": false,
+      "capital": true
     }
   ]
 }
