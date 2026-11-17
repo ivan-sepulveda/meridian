@@ -1,0 +1,685 @@
+{
+  "source": "Wikipedia, List of largest cities (UN 2025 population estimates); coordinates from ivan-sepulveda/when-where",
+  "cities": [
+    {
+      "name": "Jakarta",
+      "country": "Indonesia",
+      "iso3": "IDN",
+      "lat": -6.1753,
+      "lng": 106.8269,
+      "population": 41913860
+    },
+    {
+      "name": "Dhaka",
+      "country": "Bangladesh",
+      "iso3": "BGD",
+      "lat": 23.7289,
+      "lng": 90.3944,
+      "population": 36585479
+    },
+    {
+      "name": "Tokyo",
+      "country": "Japan",
+      "iso3": "JPN",
+      "lat": 35.685,
+      "lng": 139.7514,
+      "population": 33412512
+    },
+    {
+      "name": "Delhi",
+      "country": "India",
+      "iso3": "IND",
+      "lat": 28.66,
+      "lng": 77.23,
+      "population": 30222405
+    },
+    {
+      "name": "Shanghai",
+      "country": "China",
+      "iso3": "CHN",
+      "lat": 31.2325,
+      "lng": 121.4692,
+      "population": 29558908
+    },
+    {
+      "name": "Guangzhou",
+      "country": "China",
+      "iso3": "CHN",
+      "lat": 23.13,
+      "lng": 113.26,
+      "population": 27563372
+    },
+    {
+      "name": "Cairo",
+      "country": "Egypt",
+      "iso3": "EGY",
+      "lat": 30.0444,
+      "lng": 31.2358,
+      "population": 25566102
+    },
+    {
+      "name": "Manila",
+      "country": "Philippines",
+      "iso3": "PHL",
+      "lat": 14.5958,
+      "lng": 120.9772,
+      "population": 24735305
+    },
+    {
+      "name": "Kolkata",
+      "country": "India",
+      "iso3": "IND",
+      "lat": 22.5675,
+      "lng": 88.37,
+      "population": 22549738
+    },
+    {
+      "name": "Seoul",
+      "country": "South Korea",
+      "iso3": "KOR",
+      "lat": 37.56,
+      "lng": 126.99,
+      "population": 22490482
+    },
+    {
+      "name": "Karachi",
+      "country": "Pakistan",
+      "iso3": "PAK",
+      "lat": 24.86,
+      "lng": 67.01,
+      "population": 21422590
+    },
+    {
+      "name": "Mumbai",
+      "country": "India",
+      "iso3": "IND",
+      "lat": 19.0758,
+      "lng": 72.8775,
+      "population": 20203056
+    },
+    {
+      "name": "São Paulo",
+      "country": "Brazil",
+      "iso3": "BRA",
+      "lat": -23.5504,
+      "lng": -46.6339,
+      "population": 18949790
+    },
+    {
+      "name": "Bangkok",
+      "country": "Thailand",
+      "iso3": "THA",
+      "lat": 13.75,
+      "lng": 100.5167,
+      "population": 18180280
+    },
+    {
+      "name": "Mexico City",
+      "country": "Mexico",
+      "iso3": "MEX",
+      "lat": 19.3538,
+      "lng": -99.1359,
+      "population": 17734212
+    },
+    {
+      "name": "Beijing",
+      "country": "China",
+      "iso3": "CHN",
+      "lat": 39.904,
+      "lng": 116.4075,
+      "population": 17013303
+    },
+    {
+      "name": "Lahore",
+      "country": "Pakistan",
+      "iso3": "PAK",
+      "lat": 31.5497,
+      "lng": 74.3436,
+      "population": 15156430
+    },
+    {
+      "name": "Istanbul",
+      "country": "Turkey",
+      "iso3": "TUR",
+      "lat": 41.01,
+      "lng": 28.9603,
+      "population": 15014763
+    },
+    {
+      "name": "Moscow",
+      "country": "Russia",
+      "iso3": "RUS",
+      "lat": 55.7506,
+      "lng": 37.6175,
+      "population": 14524753
+    },
+    {
+      "name": "Ho Chi Minh City",
+      "country": "Vietnam",
+      "iso3": "VNM",
+      "lat": 10.7756,
+      "lng": 106.7019,
+      "population": 14052713
+    },
+    {
+      "name": "Buenos Aires",
+      "country": "Argentina",
+      "iso3": "ARG",
+      "lat": -34.5997,
+      "lng": -58.3819,
+      "population": 14017736
+    },
+    {
+      "name": "New York City",
+      "country": "United States",
+      "iso3": "USA",
+      "lat": 40.6943,
+      "lng": -73.9249,
+      "population": 13920148
+    },
+    {
+      "name": "Shenzhen",
+      "country": "China",
+      "iso3": "CHN",
+      "lat": 22.5467,
+      "lng": 114.0544,
+      "population": 13878396
+    },
+    {
+      "name": "Bengaluru",
+      "country": "India",
+      "iso3": "IND",
+      "lat": 12.9791,
+      "lng": 77.5913,
+      "population": 13187098
+    },
+    {
+      "name": "Osaka",
+      "country": "Japan",
+      "iso3": "JPN",
+      "lat": 34.6938,
+      "lng": 135.5021,
+      "population": 12964145
+    },
+    {
+      "name": "Lagos",
+      "country": "Nigeria",
+      "iso3": "NGA",
+      "lat": 6.4561,
+      "lng": 3.3936,
+      "population": 12791699
+    },
+    {
+      "name": "Los Angeles",
+      "country": "United States",
+      "iso3": "USA",
+      "lat": 34.1141,
+      "lng": -118.4068,
+      "population": 12740420
+    },
+    {
+      "name": "Chennai",
+      "country": "India",
+      "iso3": "IND",
+      "lat": 13.0825,
+      "lng": 80.275,
+      "population": 11153205
+    },
+    {
+      "name": "Kinshasa",
+      "country": "DR Congo",
+      "iso3": "COD",
+      "lat": -4.3233,
+      "lng": 15.3081,
+      "population": 10943641
+    },
+    {
+      "name": "Bogotá",
+      "country": "Colombia",
+      "iso3": "COL",
+      "lat": 4.6097,
+      "lng": -74.0817,
+      "population": 10624315
+    },
+    {
+      "name": "Lima",
+      "country": "Peru",
+      "iso3": "PER",
+      "lat": -12.06,
+      "lng": -77.0375,
+      "population": 10580241
+    },
+    {
+      "name": "London",
+      "country": "United Kingdom",
+      "iso3": "GBR",
+      "lat": 51.5072,
+      "lng": -0.1275,
+      "population": 10416420
+    },
+    {
+      "name": "Rio de Janeiro",
+      "country": "Brazil",
+      "iso3": "BRA",
+      "lat": -22.9111,
+      "lng": -43.2056,
+      "population": 9500336
+    },
+    {
+      "name": "Paris",
+      "country": "France",
+      "iso3": "FRA",
+      "lat": 48.8567,
+      "lng": 2.3522,
+      "population": 9381921
+    },
+    {
+      "name": "Hyderabad",
+      "country": "India",
+      "iso3": "IND",
+      "lat": 17.3617,
+      "lng": 78.4747,
+      "population": 9190795
+    },
+    {
+      "name": "Tehran",
+      "country": "Iran",
+      "iso3": "IRN",
+      "lat": 35.6889,
+      "lng": 51.3897,
+      "population": 9174964
+    },
+    {
+      "name": "Taipei",
+      "country": "Taiwan",
+      "iso3": "TWN",
+      "lat": 25.0375,
+      "lng": 121.5625,
+      "population": 9137000
+    },
+    {
+      "name": "Luanda",
+      "country": "Angola",
+      "iso3": "AGO",
+      "lat": -8.8383,
+      "lng": 13.2344,
+      "population": 9051000
+    },
+    {
+      "name": "Bandung",
+      "country": "Indonesia",
+      "iso3": "IDN",
+      "lat": -6.9218,
+      "lng": 107.6071,
+      "population": 8909104
+    },
+    {
+      "name": "Chicago",
+      "country": "United States",
+      "iso3": "USA",
+      "lat": 41.8375,
+      "lng": -87.6866,
+      "population": 8864000
+    },
+    {
+      "name": "Chengdu",
+      "country": "China",
+      "iso3": "CHN",
+      "lat": 30.66,
+      "lng": 104.0633,
+      "population": 8813000
+    },
+    {
+      "name": "Kuala Lumpur",
+      "country": "Malaysia",
+      "iso3": "MYS",
+      "lat": 3.1478,
+      "lng": 101.6953,
+      "population": 8443731
+    },
+    {
+      "name": "Dar es Salaam",
+      "country": "Tanzania",
+      "iso3": "TZA",
+      "lat": -6.8161,
+      "lng": 39.2803,
+      "population": 7795114
+    },
+    {
+      "name": "Suzhou",
+      "country": "China",
+      "iso3": "CHN",
+      "lat": 31.3,
+      "lng": 120.6194,
+      "population": 7731101
+    },
+    {
+      "name": "Ahmedabad",
+      "country": "India",
+      "iso3": "IND",
+      "lat": 23.0219,
+      "lng": 72.5797,
+      "population": 7632408
+    },
+    {
+      "name": "Hangzhou",
+      "country": "China",
+      "iso3": "CHN",
+      "lat": 30.25,
+      "lng": 120.1675,
+      "population": 7500208
+    },
+    {
+      "name": "Xi'an",
+      "country": "China",
+      "iso3": "CHN",
+      "lat": 34.2611,
+      "lng": 108.9422,
+      "population": 7444000
+    },
+    {
+      "name": "Hong Kong",
+      "country": "Hong Kong SAR",
+      "iso3": "HKG",
+      "lat": 22.2783,
+      "lng": 114.1586,
+      "population": 7429000
+    },
+    {
+      "name": "Wuhan",
+      "country": "China",
+      "iso3": "CHN",
+      "lat": 30.595,
+      "lng": 114.2975,
+      "population": 7363548
+    },
+    {
+      "name": "Dongguan",
+      "country": "China",
+      "iso3": "CHN",
+      "lat": 23.0475,
+      "lng": 113.7493,
+      "population": 7360000
+    },
+    {
+      "name": "Tianjin",
+      "country": "China",
+      "iso3": "CHN",
+      "lat": 39.1467,
+      "lng": 117.2056,
+      "population": 7285342
+    },
+    {
+      "name": "Alexandria",
+      "country": "Egypt",
+      "iso3": "EGY",
+      "lat": 31.1975,
+      "lng": 29.8925,
+      "population": 7266957
+    },
+    {
+      "name": "Foshan",
+      "country": "China",
+      "iso3": "CHN",
+      "lat": 23.0292,
+      "lng": 113.1056,
+      "population": 7236000
+    },
+    {
+      "name": "Nagoya",
+      "country": "Japan",
+      "iso3": "JPN",
+      "lat": 35.1814,
+      "lng": 136.9064,
+      "population": 7146160
+    },
+    {
+      "name": "Johannesburg",
+      "country": "South Africa",
+      "iso3": "ZAF",
+      "lat": -26.2044,
+      "lng": 28.0416,
+      "population": 7077175
+    },
+    {
+      "name": "Chongqing",
+      "country": "China",
+      "iso3": "CHN",
+      "lat": 29.55,
+      "lng": 106.5069,
+      "population": 7071073
+    },
+    {
+      "name": "Shenyang",
+      "country": "China",
+      "iso3": "CHN",
+      "lat": 41.8025,
+      "lng": 123.4281,
+      "population": 6921000
+    },
+    {
+      "name": "Riyadh",
+      "country": "Saudi Arabia",
+      "iso3": "SAU",
+      "lat": 24.65,
+      "lng": 46.71,
+      "population": 6916417
+    },
+    {
+      "name": "Surat",
+      "country": "India",
+      "iso3": "IND",
+      "lat": 21.205,
+      "lng": 72.84,
+      "population": 6908925
+    },
+    {
+      "name": "Surabaya",
+      "country": "Indonesia",
+      "iso3": "IDN",
+      "lat": -7.2463,
+      "lng": 112.7378,
+      "population": 6843503
+    },
+    {
+      "name": "Pune",
+      "country": "India",
+      "iso3": "IND",
+      "lat": 18.5211,
+      "lng": 73.8553,
+      "population": 6817951
+    },
+    {
+      "name": "Baghdad",
+      "country": "Iraq",
+      "iso3": "IRQ",
+      "lat": 33.3153,
+      "lng": 44.3661,
+      "population": 6812000
+    },
+    {
+      "name": "Khartoum",
+      "country": "Sudan",
+      "iso3": "SDN",
+      "lat": 15.6031,
+      "lng": 32.5265,
+      "population": 6809355
+    },
+    {
+      "name": "Nanjing",
+      "country": "China",
+      "iso3": "CHN",
+      "lat": 32.0608,
+      "lng": 118.7789,
+      "population": 6800676
+    },
+    {
+      "name": "Santiago",
+      "country": "Chile",
+      "iso3": "CHL",
+      "lat": -33.4375,
+      "lng": -70.65,
+      "population": 6726045
+    },
+    {
+      "name": "Addis Ababa",
+      "country": "Ethiopia",
+      "iso3": "ETH",
+      "lat": 9.0358,
+      "lng": 38.7525,
+      "population": 6706000
+    },
+    {
+      "name": "Madrid",
+      "country": "Spain",
+      "iso3": "ESP",
+      "lat": 40.4169,
+      "lng": -3.7033,
+      "population": 6497000
+    },
+    {
+      "name": "Harbin",
+      "country": "China",
+      "iso3": "CHN",
+      "lat": 45.75,
+      "lng": 126.6333,
+      "population": 6115000
+    },
+    {
+      "name": "Houston",
+      "country": "United States",
+      "iso3": "USA",
+      "lat": 29.786,
+      "lng": -95.3885,
+      "population": 6115000
+    },
+    {
+      "name": "Dallas",
+      "country": "United States",
+      "iso3": "USA",
+      "lat": 32.7935,
+      "lng": -96.7667,
+      "population": 6099000
+    },
+    {
+      "name": "Toronto",
+      "country": "Canada",
+      "iso3": "CAN",
+      "lat": 43.7417,
+      "lng": -79.3733,
+      "population": 6082000
+    },
+    {
+      "name": "Miami",
+      "country": "United States",
+      "iso3": "USA",
+      "lat": 25.784,
+      "lng": -80.2101,
+      "population": 6036000
+    },
+    {
+      "name": "Belo Horizonte",
+      "country": "Brazil",
+      "iso3": "BRA",
+      "lat": -19.9281,
+      "lng": -43.9419,
+      "population": 5972000
+    },
+    {
+      "name": "Singapore",
+      "country": "Singapore",
+      "iso3": "SGP",
+      "lat": 1.3,
+      "lng": 103.8,
+      "population": 5792000
+    },
+    {
+      "name": "Philadelphia",
+      "country": "United States",
+      "iso3": "USA",
+      "lat": 40.0077,
+      "lng": -75.1339,
+      "population": 5695000
+    },
+    {
+      "name": "Atlanta",
+      "country": "United States",
+      "iso3": "USA",
+      "lat": 33.7628,
+      "lng": -84.422,
+      "population": 5572000
+    },
+    {
+      "name": "Fukuoka",
+      "country": "Japan",
+      "iso3": "JPN",
+      "lat": 33.5901,
+      "lng": 130.4017,
+      "population": 5551000
+    },
+    {
+      "name": "Barcelona",
+      "country": "Spain",
+      "iso3": "ESP",
+      "lat": 41.3825,
+      "lng": 2.1769,
+      "population": 5494000
+    },
+    {
+      "name": "Saint Petersburg",
+      "country": "Russia",
+      "iso3": "RUS",
+      "lat": 59.95,
+      "lng": 30.3167,
+      "population": 5383000
+    },
+    {
+      "name": "Qingdao",
+      "country": "China",
+      "iso3": "CHN",
+      "lat": 36.1167,
+      "lng": 120.4,
+      "population": 5381000
+    },
+    {
+      "name": "Dalian",
+      "country": "China",
+      "iso3": "CHN",
+      "lat": 38.9,
+      "lng": 121.6,
+      "population": 5300000
+    },
+    {
+      "name": "Washington, D.C.",
+      "country": "United States",
+      "iso3": "USA",
+      "lat": 38.9047,
+      "lng": -77.0163,
+      "population": 5207000
+    },
+    {
+      "name": "Yangon",
+      "country": "Myanmar",
+      "iso3": "MMR",
+      "lat": 16.8053,
+      "lng": 96.1561,
+      "population": 5157000
+    },
+    {
+      "name": "Jinan",
+      "country": "China",
+      "iso3": "CHN",
+      "lat": 36.6667,
+      "lng": 116.9833,
+      "population": 5052000
+    },
+    {
+      "name": "Guadalajara",
+      "country": "Mexico",
+      "iso3": "MEX",
+      "lat": 20.6764,
+      "lng": -103.3422,
+      "population": 5023000
+    }
+  ]
+}

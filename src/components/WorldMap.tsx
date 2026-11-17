@@ -9,6 +9,7 @@ import { feature } from "topojson-client";
 import type { Topology, GeometryCollection } from "topojson-specification";
 import type { Feature, Geometry } from "geojson";
 import type { Country, TopProduct } from "@/lib/countries";
+import type { City } from "@/lib/cities";
 import { countryKeys } from "@/lib/countryKey";
 
 const WIDTH = 960;
@@ -18,7 +19,17 @@ type CountryFeature = Feature<Geometry, { name: string }> & { key: string };
 
 type TradeSource = { year: number; source: string };
 
-type Hover = { key: string; x: number; y: number; flipX: boolean; flipY: boolean };
+type Hover = {
+  kind: "country" | "city";
+  key: string;
+  x: number;
+  y: number;
+  flipX: boolean;
+  flipY: boolean;
+};
+
+// City names appear once zoomed in at least this far.
+const LABEL_ZOOM = 3;
 
 export default function WorldMap() {
   const [features, setFeatures] = useState<CountryFeature[]>([]);
@@ -27,6 +38,7 @@ export default function WorldMap() {
   const [selected, setSelected] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [trade, setTrade] = useState<TradeSource | null>(null);
+  const [cities, setCities] = useState<City[]>([]);
 
   const svgRef = useRef<SVGSVGElement>(null);
   const gRef = useRef<SVGGElement>(null);
@@ -42,8 +54,12 @@ export default function WorldMap() {
         if (!r.ok) throw new Error(`API ${r.status}`);
         return r.json() as Promise<{ countries: Country[]; trade: TradeSource }>;
       }),
+      fetch("/api/cities").then((r) => {
+        if (!r.ok) throw new Error(`API ${r.status}`);
+        return r.json() as Promise<{ cities: City[] }>;
+      }),
     ])
-      .then(([world, data]) => {
+      .then(([world, data, cityData]) => {
         if (cancelled) return;
         const topo = (world.default ?? world) as unknown as Topology<{
           countries: GeometryCollection<{ name: string }>;
@@ -53,6 +69,7 @@ export default function WorldMap() {
         setFeatures(fc.features.map((f, i) => ({ ...f, key: keys[i] })));
         setCountries(Object.fromEntries(data.countries.map((c) => [c.id, c])));
         setTrade(data.trade);
+        setCities(cityData.cities);
       })
       .catch((e) => !cancelled && setError(String(e)));
     return () => {
@@ -60,16 +77,25 @@ export default function WorldMap() {
     };
   }, []);
 
-  const path = useMemo(() => {
-    const projection = geoNaturalEarth1().fitExtent(
-      [
-        [8, 8],
-        [WIDTH - 8, HEIGHT - 8],
-      ],
-      { type: "Sphere" },
-    );
-    return geoPath(projection);
-  }, []);
+  const projection = useMemo(
+    () =>
+      geoNaturalEarth1().fitExtent(
+        [
+          [8, 8],
+          [WIDTH - 8, HEIGHT - 8],
+        ],
+        { type: "Sphere" },
+      ),
+    [],
+  );
+  const path = useMemo(() => geoPath(projection), [projection]);
+
+  // Project once; hover re-renders then only touch fill/stroke.
+  const countryPaths = useMemo(() => features.map((f) => path(f) ?? ""), [features, path]);
+  const cityPoints = useMemo(
+    () => cities.map((c) => projection([c.lng, c.lat]) ?? [0, 0]),
+    [cities, projection],
+  );
 
   // Pan + zoom (scroll / pinch / drag).
   useEffect(() => {
@@ -81,7 +107,15 @@ export default function WorldMap() {
         [0, 0],
         [WIDTH, HEIGHT],
       ])
-      .on("zoom", (e) => g.attr("transform", e.transform.toString()));
+      .on("zoom", (e) => {
+        g.attr("transform", e.transform.toString());
+        // Counter-scale city dots and labels so they stay the same size on screen.
+        const svg = svgRef.current;
+        if (svg) {
+          svg.style.setProperty("--k", String(e.transform.k));
+          svg.dataset.labels = e.transform.k >= LABEL_ZOOM ? "on" : "off";
+        }
+      });
     select(svgRef.current).call(z);
     zoomRef.current = z;
   }, []);
@@ -92,15 +126,16 @@ export default function WorldMap() {
     }
   };
 
-  const onMove = (key: string, e: React.PointerEvent) => {
+  const onMove = (kind: Hover["kind"], key: string, e: React.PointerEvent) => {
     const rect = wrapRef.current?.getBoundingClientRect();
     if (!rect) return;
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
-    setHover({ key, x, y, flipX: x > rect.width - 180, flipY: y > rect.height - 110 });
+    setHover({ kind, key, x, y, flipX: x > rect.width - 180, flipY: y > rect.height - 110 });
   };
 
-  const hovered = hover ? countries[hover.key] : undefined;
+  const hovered = hover?.kind === "country" ? countries[hover.key] : undefined;
+  const hoveredCity = hover?.kind === "city" ? cities[Number(hover.key)] : undefined;
   const active = selected ? countries[selected] : undefined;
 
   return (
@@ -112,7 +147,8 @@ export default function WorldMap() {
         <svg
           ref={svgRef}
           viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
-          className="block h-auto w-full cursor-grab touch-none active:cursor-grabbing"
+          className="world-map block h-auto w-full cursor-grab touch-none active:cursor-grabbing"
+          data-labels="off"
           role="img"
           aria-label="World map"
           onClick={() => setSelected(null)}
@@ -126,15 +162,15 @@ export default function WorldMap() {
               strokeWidth={0.5}
               vectorEffect="non-scaling-stroke"
             />
-            {features.map((f) => {
+            {features.map((f, i) => {
               const c = countries[f.key];
               const isSel = f.key === selected;
-              const isHover = f.key === hover?.key;
+              const isHover = hover?.kind === "country" && f.key === hover.key;
               const share = c?.stats.topExport?.share;
               return (
                 <path
                   key={f.key}
-                  d={path(f) ?? ""}
+                  d={countryPaths[i]}
                   fill={
                     isSel ? "var(--selected)" : share === undefined ? "var(--land)" : shareFill(share)
                   }
@@ -142,7 +178,7 @@ export default function WorldMap() {
                   strokeWidth={isHover || isSel ? 1.25 : 0.5}
                   vectorEffect="non-scaling-stroke"
                   className="cursor-pointer transition-[fill] duration-150"
-                  onPointerMove={(e) => onMove(f.key, e)}
+                  onPointerMove={(e) => onMove("country", f.key, e)}
                   onPointerLeave={() => setHover(null)}
                   onClick={(e) => {
                     e.stopPropagation();
@@ -153,6 +189,26 @@ export default function WorldMap() {
                 </path>
               );
             })}
+            <g aria-label="Largest cities">
+              {cities.map((city, i) => {
+                const [x, y] = cityPoints[i];
+                return (
+                  <g
+                    key={`${city.name}-${city.country}`}
+                    transform={`translate(${x},${y})`}
+                    className="city"
+                    onPointerMove={(e) => onMove("city", String(i), e)}
+                    onPointerLeave={() => setHover(null)}
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    {/* Larger invisible target so small dots are easy to hover. */}
+                    <circle className="city-hit" />
+                    <circle className="city-dot" />
+                    <text className="city-label">{city.name}</text>
+                  </g>
+                );
+              })}
+            </g>
           </g>
         </svg>
 
@@ -176,6 +232,24 @@ export default function WorldMap() {
           >
             <div className="mb-1 font-semibold">{hovered.name}</div>
             <StatRows country={hovered} />
+          </div>
+        )}
+
+        {hoveredCity && hover && (
+          <div
+            className="pointer-events-none absolute z-10 w-max max-w-72 rounded-lg border border-[var(--border)] bg-[var(--panel)] px-3 py-2 text-xs shadow-lg"
+            style={{
+              left: hover.x + 14,
+              top: hover.y + 14,
+              transform: `${hover.flipX ? "translateX(calc(-100% - 28px))" : ""} ${hover.flipY ? "translateY(calc(-100% - 28px))" : ""}`,
+            }}
+          >
+            <div className="font-semibold">{hoveredCity.name}</div>
+            <div className="text-[var(--muted)]">{hoveredCity.country}</div>
+            <div className="mt-1 tabular-nums">
+              {formatPopulation(hoveredCity.population)} people{" "}
+              <span className="text-[var(--muted)]">(UN 2025 est.)</span>
+            </div>
           </div>
         )}
 
@@ -249,6 +323,10 @@ const SHARE_MAX = 0.6;
 function shareFill(share: number) {
   const pct = 15 + Math.min(share / SHARE_MAX, 1) * 70;
   return `color-mix(in oklab, var(--accent) ${pct}%, var(--land))`;
+}
+
+function formatPopulation(n: number) {
+  return n >= 1e6 ? `${(n / 1e6).toFixed(1)}M` : n.toLocaleString();
 }
 
 function formatShare(share: number) {
