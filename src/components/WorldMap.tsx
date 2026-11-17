@@ -16,6 +16,8 @@ const HEIGHT = 500;
 
 type CountryFeature = Feature<Geometry, { name: string }> & { key: string };
 
+type TradeSource = { year: number; source: string };
+
 type Hover = { key: string; x: number; y: number; flipX: boolean; flipY: boolean };
 
 export default function WorldMap() {
@@ -24,6 +26,7 @@ export default function WorldMap() {
   const [hover, setHover] = useState<Hover | null>(null);
   const [selected, setSelected] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [trade, setTrade] = useState<TradeSource | null>(null);
 
   const svgRef = useRef<SVGSVGElement>(null);
   const gRef = useRef<SVGGElement>(null);
@@ -37,7 +40,7 @@ export default function WorldMap() {
       import("world-atlas/countries-50m.json"),
       fetch("/api/countries").then((r) => {
         if (!r.ok) throw new Error(`API ${r.status}`);
-        return r.json() as Promise<{ countries: Country[] }>;
+        return r.json() as Promise<{ countries: Country[]; trade: TradeSource }>;
       }),
     ])
       .then(([world, data]) => {
@@ -49,6 +52,7 @@ export default function WorldMap() {
         const keys = countryKeys(fc.features.map((f) => ({ id: f.id, name: f.properties.name })));
         setFeatures(fc.features.map((f, i) => ({ ...f, key: keys[i] })));
         setCountries(Object.fromEntries(data.countries.map((c) => [c.id, c])));
+        setTrade(data.trade);
       })
       .catch((e) => !cancelled && setError(String(e)));
     return () => {
@@ -126,15 +130,13 @@ export default function WorldMap() {
               const c = countries[f.key];
               const isSel = f.key === selected;
               const isHover = f.key === hover?.key;
-              const pct = c ? 15 + c.stats.note1 * 0.7 : 0;
+              const share = c?.stats.topExport?.share;
               return (
                 <path
                   key={f.key}
                   d={path(f) ?? ""}
                   fill={
-                    isSel
-                      ? "var(--selected)"
-                      : `color-mix(in oklab, var(--accent) ${pct}%, var(--land))`
+                    isSel ? "var(--selected)" : share === undefined ? "var(--land)" : shareFill(share)
                   }
                   stroke={isHover || isSel ? "var(--foreground)" : "var(--border-country)"}
                   strokeWidth={isHover || isSel ? 1.25 : 0.5}
@@ -192,7 +194,10 @@ export default function WorldMap() {
             <div className="text-xs uppercase tracking-wide text-[var(--muted)]">Selected</div>
             <h2 className="mb-4 text-xl font-semibold">{active.name}</h2>
             <StatRows country={active} large />
-            <p className="mt-6 text-xs text-[var(--muted)]">Filler values for now.</p>
+            <p className="mt-6 text-xs text-[var(--muted)]">
+              Top export: goods only{trade ? `, ${trade.year}, from ${trade.source}` : ""}. Note 2
+              and Note 3 are filler values.
+            </p>
           </>
         ) : (
           <div className="text-sm text-[var(--muted)]">
@@ -206,8 +211,23 @@ export default function WorldMap() {
 }
 
 function StatRows({ country, large }: { country: Country; large?: boolean }) {
-  const rows = [
-    ["Note 1", country.stats.note1.toString()],
+  const top = country.stats.topExport;
+  const rows: [string, React.ReactNode][] = [
+    [
+      "Top Export",
+      top ? (
+        <>
+          {top.label}
+          {large && (
+            <div className="text-xs font-normal text-[var(--muted)]">
+              {formatShare(top.share)} of exports · {formatUsd(top.valueUsd)}
+            </div>
+          )}
+        </>
+      ) : (
+        <span className="text-[var(--muted)]">No data</span>
+      ),
+    ],
     ["Note 2", `${country.stats.note2.toFixed(1)}%`],
     ["Note 3", country.stats.note3.toLocaleString()],
   ];
@@ -215,28 +235,46 @@ function StatRows({ country, large }: { country: Country; large?: boolean }) {
     <dl className={large ? "space-y-3" : "space-y-0.5"}>
       {rows.map(([label, value]) => (
         <div key={label} className="flex items-baseline justify-between gap-4">
-          <dt className="text-[var(--muted)]">{label}</dt>
-          <dd className={`tabular-nums ${large ? "text-lg font-medium" : ""}`}>{value}</dd>
+          <dt className="shrink-0 text-[var(--muted)]">{label}</dt>
+          <dd className={`text-right tabular-nums ${large ? "text-lg font-medium" : ""}`}>{value}</dd>
         </div>
       ))}
     </dl>
   );
 }
 
+// Shading: the top export's share of total exports. 60%+ is fully saturated;
+// few countries are above that, and those (mostly oil states) all read as "very dependent".
+const SHARE_MAX = 0.6;
+function shareFill(share: number) {
+  const pct = 15 + Math.min(share / SHARE_MAX, 1) * 70;
+  return `color-mix(in oklab, var(--accent) ${pct}%, var(--land))`;
+}
+
+function formatShare(share: number) {
+  return `${Math.round(share * 100)}%`;
+}
+
+function formatUsd(usd: number) {
+  if (usd >= 1e9) return `$${(usd / 1e9).toFixed(1)}B`;
+  if (usd >= 1e6) return `$${(usd / 1e6).toFixed(1)}M`;
+  return `$${Math.round(usd / 1e3)}K`;
+}
+
 function Legend() {
   return (
     <div className="absolute bottom-3 left-3 rounded-md border border-[var(--border)] bg-[var(--panel)] px-2.5 py-1.5 text-[10px] text-[var(--muted)]">
-      <div className="mb-1">Note 1</div>
+      <div className="mb-1">Top export, share of all exports</div>
       <div
         className="h-2 w-28 rounded-sm"
         style={{
           background:
-            "linear-gradient(to right, color-mix(in oklab, var(--accent) 15%, var(--land)), color-mix(in oklab, var(--accent) 85%, var(--land)))",
+            `linear-gradient(to right, ${shareFill(0)}, ${shareFill(SHARE_MAX)})`,
         }}
       />
       <div className="mt-0.5 flex justify-between tabular-nums">
-        <span>0</span>
-        <span>100</span>
+        <span>0%</span>
+        <span>{formatShare(SHARE_MAX)}+</span>
       </div>
     </div>
   );

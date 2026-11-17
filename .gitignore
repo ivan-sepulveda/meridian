@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# raw datasets (large, not committed)
+/data/
+
+# python
+__pycache__/
