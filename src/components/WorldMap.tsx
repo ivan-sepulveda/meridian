@@ -8,7 +8,7 @@ import { zoom, zoomIdentity, type ZoomBehavior } from "d3-zoom";
 import { feature } from "topojson-client";
 import type { Topology, GeometryCollection } from "topojson-specification";
 import type { Feature, Geometry } from "geojson";
-import type { Country, TopProduct } from "@/lib/countries";
+import type { BigMac, Country, TopProduct } from "@/lib/countries";
 import type { City } from "@/lib/cities";
 import { countryKeys } from "@/lib/countryKey";
 
@@ -302,7 +302,8 @@ export default function WorldMap() {
               nominal US$, {active.stats.gdpPerCapita
                 ? `${active.stats.gdpPerCapita.source}${active.stats.gdpPerCapita.year ? ` ${active.stats.gdpPerCapita.year}` : ""}`
                 : "IMF / World Bank / UN"}{" "}
-              via Wikipedia. Note 3 is a filler value.
+              via Wikipedia. Big Mac: The Economist&apos;s Big Mac Index, latest survey for each
+              country. Note 3 is a filler value.
             </p>
           </>
         ) : (
@@ -331,13 +332,42 @@ function TradeValue({ product, large }: { product: Ranked | null; large?: boolea
   );
 }
 
+/** "$9.04 (+45% vs US)"; the panel adds the survey date and any note. */
+function BigMacValue({ bigMac, large }: { bigMac: BigMac; large?: boolean }) {
+  const vs = bigMac.vsUsd;
+  const sign = vs !== null && vs > 0 ? "+" : "";
+  const date = new Date(`${bigMac.date}T00:00:00Z`).toLocaleDateString("en-US", {
+    month: "short",
+    year: "numeric",
+    timeZone: "UTC",
+  });
+  return (
+    <>
+      ${bigMac.dollarPrice.toFixed(2)}
+      {vs !== null && Math.abs(vs) >= 0.005 && (
+        <span className="text-[var(--muted)]">
+          {" "}
+          ({sign}
+          {formatShare(vs)} vs US)
+        </span>
+      )}
+      {large && (
+        <div className="text-xs font-normal text-[var(--muted)]">
+          {[bigMac.note, date].filter(Boolean).join(" · ")}
+        </div>
+      )}
+    </>
+  );
+}
+
 function StatRows({ country, large }: { country: Country; large?: boolean }) {
-  const { topExport, topImport, topService, gdpPerCapita, note3 } = country.stats;
+  const { topExport, topImport, topService, gdpPerCapita, bigMac, note3 } = country.stats;
   const rows: [string, React.ReactNode][] = [
     ["Top goods export", <TradeValue key="e" product={topExport} large={large} />],
     ["Top service export", <TradeValue key="s" product={topService} large={large} />],
     ["Top goods import", <TradeValue key="i" product={topImport} large={large} />],
     ["GDP per capita", gdpPerCapita ? `$${gdpPerCapita.usd.toLocaleString("en-US")}` : noData],
+    ["Big Mac", bigMac ? <BigMacValue key="b" bigMac={bigMac} large={large} /> : noData],
     ["Note 3", note3.toLocaleString()],
   ];
   return (
@@ -372,6 +402,14 @@ const SHADE_METRICS = {
     max: 100_000,
     log: true,
     format: (n) => (n >= 1000 ? `$${Math.round(n / 1000)}K` : `$${n}`),
+  },
+  bigMac: {
+    label: "Big Mac Index (price in US$)",
+    value: (c) => c.stats.bigMac?.dollarPrice,
+    min: 2,
+    max: 8,
+    log: false,
+    format: (n) => `$${Math.round(n)}`,
   },
 } satisfies Record<string, ShadeMetricDef>;
 

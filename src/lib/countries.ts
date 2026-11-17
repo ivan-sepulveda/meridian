@@ -4,6 +4,7 @@ import { countryKeys } from "./countryKey";
 import topTrade from "@/data/top-trade.json";
 import servicesData from "@/data/services.json";
 import gdpData from "@/data/gdp-per-capita.json";
+import bigMacData from "@/data/big-mac.json";
 
 /** A country's largest export or import product. */
 export type TopProduct = {
@@ -25,6 +26,18 @@ export type TopService = {
 /** Nominal GDP per capita, US$ (IMF, else World Bank, else UN). */
 export type GdpPerCapita = { usd: number; source: string; year: number | null };
 
+/** The Economist's Big Mac Index, latest data point for the country. */
+export type BigMac = {
+  /** Price of a Big Mac in US dollars at market exchange rates. */
+  dollarPrice: number;
+  /** Currency over (+) or under (−) valuation against the dollar, e.g. 0.45 = +45%. */
+  vsUsd: number | null;
+  /** ISO date of the survey, e.g. "2026-07-01". */
+  date: string;
+  /** e.g. "Euro area average" for eurozone members. */
+  note: string | null;
+};
+
 export type CountryStats = {
   /** Goods only (BACI). null for territories with no data. */
   topExport: TopProduct | null;
@@ -35,6 +48,7 @@ export type CountryStats = {
   /** Year of the services figures (World Bank; varies by country). */
   servicesYear: number | null;
   gdpPerCapita: GdpPerCapita | null;
+  bigMac: BigMac | null;
   note3: number;
 };
 
@@ -52,6 +66,9 @@ export const servicesSource = servicesData.source;
 // Keyed by the map's own country name, so shapes without an ISO code (Kosovo) match.
 const gdpByName = gdpData.countries as Record<string, GdpPerCapita>;
 export const gdpSource = gdpData.source;
+
+const bigMacByIso = bigMacData.countries as Record<string, BigMac & { name: string }>;
+export const bigMacSource = bigMacData.source;
 
 export type Country = {
   id: string;
@@ -110,6 +127,7 @@ export function getCountries(): Country[] {
       const owns = ownsId(g.id, keys[i], g.name);
       const trade = owns ? tradeByIso[String(g.id)] : undefined;
       const services = owns ? servicesByIso[String(g.id)] : undefined;
+      const bigMac = owns ? bigMacByIso[String(g.id)] : undefined;
       return {
         id: keys[i],
         name: g.name,
@@ -120,6 +138,9 @@ export function getCountries(): Country[] {
           topService: services?.topService ?? null,
           servicesYear: services?.year ?? null,
           gdpPerCapita: gdpByName[g.name] ?? null,
+          bigMac: bigMac
+            ? { dollarPrice: bigMac.dollarPrice, vsUsd: bigMac.vsUsd, date: bigMac.date, note: bigMac.note }
+            : null,
           note3: fillerNote3(keys[i]),
         },
       };

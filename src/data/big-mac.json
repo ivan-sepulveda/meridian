@@ -1,0 +1,537 @@
+{
+  "source": "The Economist, Big Mac Index",
+  "countries": {
+    "031": {
+      "name": "Azerbaijan",
+      "date": "2026-07-01",
+      "dollarPrice": 4.26,
+      "vsUsd": -0.3144,
+      "note": null
+    },
+    "032": {
+      "name": "Argentina",
+      "date": "2026-07-01",
+      "dollarPrice": 5.91,
+      "vsUsd": -0.0504,
+      "note": null
+    },
+    "036": {
+      "name": "Australia",
+      "date": "2026-07-01",
+      "dollarPrice": 5.95,
+      "vsUsd": -0.0435,
+      "note": null
+    },
+    "040": {
+      "name": "Euro area",
+      "date": "2026-07-01",
+      "dollarPrice": 7.08,
+      "vsUsd": 0.1381,
+      "note": "Euro area average"
+    },
+    "048": {
+      "name": "Bahrain",
+      "date": "2026-07-01",
+      "dollarPrice": 4.77,
+      "vsUsd": -0.2325,
+      "note": null
+    },
+    "056": {
+      "name": "Euro area",
+      "date": "2026-07-01",
+      "dollarPrice": 7.08,
+      "vsUsd": 0.1381,
+      "note": "Euro area average"
+    },
+    "076": {
+      "name": "Brazil",
+      "date": "2026-07-01",
+      "dollarPrice": 4.71,
+      "vsUsd": -0.2435,
+      "note": null
+    },
+    "100": {
+      "name": "Euro area",
+      "date": "2026-07-01",
+      "dollarPrice": 7.08,
+      "vsUsd": 0.1381,
+      "note": "Euro area average"
+    },
+    "124": {
+      "name": "Canada",
+      "date": "2026-07-01",
+      "dollarPrice": 5.81,
+      "vsUsd": -0.0652,
+      "note": null
+    },
+    "144": {
+      "name": "Sri Lanka",
+      "date": "2024-01-01",
+      "dollarPrice": 5.69,
+      "vsUsd": -0.0003,
+      "note": null
+    },
+    "152": {
+      "name": "Chile",
+      "date": "2026-07-01",
+      "dollarPrice": 5.41,
+      "vsUsd": -0.1305,
+      "note": null
+    },
+    "156": {
+      "name": "China",
+      "date": "2026-07-01",
+      "dollarPrice": 3.91,
+      "vsUsd": -0.3708,
+      "note": null
+    },
+    "158": {
+      "name": "Taiwan",
+      "date": "2026-07-01",
+      "dollarPrice": 2.42,
+      "vsUsd": -0.6104,
+      "note": null
+    },
+    "170": {
+      "name": "Colombia",
+      "date": "2026-07-01",
+      "dollarPrice": 8.0,
+      "vsUsd": 0.2867,
+      "note": null
+    },
+    "188": {
+      "name": "Costa Rica",
+      "date": "2026-07-01",
+      "dollarPrice": 7.0,
+      "vsUsd": 0.1247,
+      "note": null
+    },
+    "191": {
+      "name": "Euro area",
+      "date": "2026-07-01",
+      "dollarPrice": 7.08,
+      "vsUsd": 0.1381,
+      "note": "Euro area average"
+    },
+    "196": {
+      "name": "Euro area",
+      "date": "2026-07-01",
+      "dollarPrice": 7.08,
+      "vsUsd": 0.1381,
+      "note": "Euro area average"
+    },
+    "203": {
+      "name": "Czech Republic",
+      "date": "2026-07-01",
+      "dollarPrice": 5.43,
+      "vsUsd": -0.1263,
+      "note": null
+    },
+    "208": {
+      "name": "Denmark",
+      "date": "2026-07-01",
+      "dollarPrice": 7.04,
+      "vsUsd": 0.1314,
+      "note": null
+    },
+    "233": {
+      "name": "Euro area",
+      "date": "2026-07-01",
+      "dollarPrice": 7.08,
+      "vsUsd": 0.1381,
+      "note": "Euro area average"
+    },
+    "246": {
+      "name": "Euro area",
+      "date": "2026-07-01",
+      "dollarPrice": 7.08,
+      "vsUsd": 0.1381,
+      "note": "Euro area average"
+    },
+    "250": {
+      "name": "Euro area",
+      "date": "2026-07-01",
+      "dollarPrice": 7.08,
+      "vsUsd": 0.1381,
+      "note": "Euro area average"
+    },
+    "276": {
+      "name": "Euro area",
+      "date": "2026-07-01",
+      "dollarPrice": 7.08,
+      "vsUsd": 0.1381,
+      "note": "Euro area average"
+    },
+    "300": {
+      "name": "Euro area",
+      "date": "2026-07-01",
+      "dollarPrice": 7.08,
+      "vsUsd": 0.1381,
+      "note": "Euro area average"
+    },
+    "320": {
+      "name": "Guatemala",
+      "date": "2026-07-01",
+      "dollarPrice": 4.46,
+      "vsUsd": -0.2826,
+      "note": null
+    },
+    "340": {
+      "name": "Honduras",
+      "date": "2026-07-01",
+      "dollarPrice": 5.19,
+      "vsUsd": -0.1652,
+      "note": null
+    },
+    "344": {
+      "name": "Hong Kong",
+      "date": "2026-07-01",
+      "dollarPrice": 3.25,
+      "vsUsd": -0.477,
+      "note": null
+    },
+    "348": {
+      "name": "Hungary",
+      "date": "2026-07-01",
+      "dollarPrice": 5.3,
+      "vsUsd": -0.1483,
+      "note": null
+    },
+    "356": {
+      "name": "India",
+      "date": "2026-07-01",
+      "dollarPrice": 2.45,
+      "vsUsd": -0.6054,
+      "note": null
+    },
+    "360": {
+      "name": "Indonesia",
+      "date": "2026-07-01",
+      "dollarPrice": 2.38,
+      "vsUsd": -0.6173,
+      "note": null
+    },
+    "372": {
+      "name": "Euro area",
+      "date": "2026-07-01",
+      "dollarPrice": 7.08,
+      "vsUsd": 0.1381,
+      "note": "Euro area average"
+    },
+    "376": {
+      "name": "Israel",
+      "date": "2026-07-01",
+      "dollarPrice": 7.67,
+      "vsUsd": 0.2329,
+      "note": null
+    },
+    "380": {
+      "name": "Euro area",
+      "date": "2026-07-01",
+      "dollarPrice": 7.08,
+      "vsUsd": 0.1381,
+      "note": "Euro area average"
+    },
+    "392": {
+      "name": "Japan",
+      "date": "2026-07-01",
+      "dollarPrice": 3.08,
+      "vsUsd": -0.5042,
+      "note": null
+    },
+    "400": {
+      "name": "Jordan",
+      "date": "2026-07-01",
+      "dollarPrice": 3.53,
+      "vsUsd": -0.4331,
+      "note": null
+    },
+    "410": {
+      "name": "South Korea",
+      "date": "2026-07-01",
+      "dollarPrice": 3.84,
+      "vsUsd": -0.3833,
+      "note": null
+    },
+    "414": {
+      "name": "Kuwait",
+      "date": "2026-07-01",
+      "dollarPrice": 4.52,
+      "vsUsd": -0.2728,
+      "note": null
+    },
+    "422": {
+      "name": "Lebanon",
+      "date": "2026-07-01",
+      "dollarPrice": 5.36,
+      "vsUsd": -0.1382,
+      "note": null
+    },
+    "428": {
+      "name": "Euro area",
+      "date": "2026-07-01",
+      "dollarPrice": 7.08,
+      "vsUsd": 0.1381,
+      "note": "Euro area average"
+    },
+    "440": {
+      "name": "Euro area",
+      "date": "2026-07-01",
+      "dollarPrice": 7.08,
+      "vsUsd": 0.1381,
+      "note": "Euro area average"
+    },
+    "442": {
+      "name": "Euro area",
+      "date": "2026-07-01",
+      "dollarPrice": 7.08,
+      "vsUsd": 0.1381,
+      "note": "Euro area average"
+    },
+    "458": {
+      "name": "Malaysia",
+      "date": "2026-07-01",
+      "dollarPrice": 3.57,
+      "vsUsd": -0.4264,
+      "note": null
+    },
+    "470": {
+      "name": "Euro area",
+      "date": "2026-07-01",
+      "dollarPrice": 7.08,
+      "vsUsd": 0.1381,
+      "note": "Euro area average"
+    },
+    "484": {
+      "name": "Mexico",
+      "date": "2026-07-01",
+      "dollarPrice": 6.27,
+      "vsUsd": 0.0079,
+      "note": null
+    },
+    "498": {
+      "name": "Moldova",
+      "date": "2026-07-01",
+      "dollarPrice": 4.56,
+      "vsUsd": -0.2671,
+      "note": null
+    },
+    "512": {
+      "name": "Oman",
+      "date": "2026-07-01",
+      "dollarPrice": 3.97,
+      "vsUsd": -0.3612,
+      "note": null
+    },
+    "528": {
+      "name": "Euro area",
+      "date": "2026-07-01",
+      "dollarPrice": 7.08,
+      "vsUsd": 0.1381,
+      "note": "Euro area average"
+    },
+    "554": {
+      "name": "New Zealand",
+      "date": "2026-07-01",
+      "dollarPrice": 5.14,
+      "vsUsd": -0.1743,
+      "note": null
+    },
+    "558": {
+      "name": "Nicaragua",
+      "date": "2026-07-01",
+      "dollarPrice": 5.11,
+      "vsUsd": -0.1791,
+      "note": null
+    },
+    "578": {
+      "name": "Norway",
+      "date": "2026-07-01",
+      "dollarPrice": 8.05,
+      "vsUsd": 0.2947,
+      "note": null
+    },
+    "586": {
+      "name": "Pakistan",
+      "date": "2026-07-01",
+      "dollarPrice": 3.89,
+      "vsUsd": -0.3752,
+      "note": null
+    },
+    "604": {
+      "name": "Peru",
+      "date": "2026-07-01",
+      "dollarPrice": 4.99,
+      "vsUsd": -0.1975,
+      "note": null
+    },
+    "608": {
+      "name": "Philippines",
+      "date": "2026-07-01",
+      "dollarPrice": 2.74,
+      "vsUsd": -0.5595,
+      "note": null
+    },
+    "616": {
+      "name": "Poland",
+      "date": "2026-07-01",
+      "dollarPrice": 6.22,
+      "vsUsd": -0.0003,
+      "note": null
+    },
+    "620": {
+      "name": "Euro area",
+      "date": "2026-07-01",
+      "dollarPrice": 7.08,
+      "vsUsd": 0.1381,
+      "note": "Euro area average"
+    },
+    "634": {
+      "name": "Qatar",
+      "date": "2026-07-01",
+      "dollarPrice": 4.94,
+      "vsUsd": -0.2052,
+      "note": null
+    },
+    "642": {
+      "name": "Romania",
+      "date": "2026-07-01",
+      "dollarPrice": 4.01,
+      "vsUsd": -0.3561,
+      "note": null
+    },
+    "643": {
+      "name": "Russia",
+      "date": "2022-01-01",
+      "dollarPrice": 1.74,
+      "vsUsd": -0.654,
+      "note": null
+    },
+    "682": {
+      "name": "Saudi Arabia",
+      "date": "2026-07-01",
+      "dollarPrice": 5.06,
+      "vsUsd": -0.1865,
+      "note": null
+    },
+    "702": {
+      "name": "Singapore",
+      "date": "2026-07-01",
+      "dollarPrice": 5.77,
+      "vsUsd": -0.0716,
+      "note": null
+    },
+    "703": {
+      "name": "Euro area",
+      "date": "2026-07-01",
+      "dollarPrice": 7.08,
+      "vsUsd": 0.1381,
+      "note": "Euro area average"
+    },
+    "704": {
+      "name": "Vietnam",
+      "date": "2026-07-01",
+      "dollarPrice": 2.89,
+      "vsUsd": -0.5346,
+      "note": null
+    },
+    "705": {
+      "name": "Euro area",
+      "date": "2026-07-01",
+      "dollarPrice": 7.08,
+      "vsUsd": 0.1381,
+      "note": "Euro area average"
+    },
+    "710": {
+      "name": "South Africa",
+      "date": "2026-07-01",
+      "dollarPrice": 3.49,
+      "vsUsd": -0.4396,
+      "note": null
+    },
+    "724": {
+      "name": "Euro area",
+      "date": "2026-07-01",
+      "dollarPrice": 7.08,
+      "vsUsd": 0.1381,
+      "note": "Euro area average"
+    },
+    "752": {
+      "name": "Sweden",
+      "date": "2026-07-01",
+      "dollarPrice": 7.16,
+      "vsUsd": 0.1514,
+      "note": null
+    },
+    "756": {
+      "name": "Switzerland",
+      "date": "2026-07-01",
+      "dollarPrice": 9.04,
+      "vsUsd": 0.4537,
+      "note": null
+    },
+    "764": {
+      "name": "Thailand",
+      "date": "2026-07-01",
+      "dollarPrice": 4.02,
+      "vsUsd": -0.3544,
+      "note": null
+    },
+    "784": {
+      "name": "United Arab Emirates",
+      "date": "2026-07-01",
+      "dollarPrice": 5.17,
+      "vsUsd": -0.1683,
+      "note": null
+    },
+    "792": {
+      "name": "Turkey",
+      "date": "2026-07-01",
+      "dollarPrice": 6.91,
+      "vsUsd": 0.1111,
+      "note": null
+    },
+    "804": {
+      "name": "Ukraine",
+      "date": "2026-07-01",
+      "dollarPrice": 3.34,
+      "vsUsd": -0.4637,
+      "note": null
+    },
+    "818": {
+      "name": "Egypt",
+      "date": "2026-07-01",
+      "dollarPrice": 2.87,
+      "vsUsd": -0.5386,
+      "note": null
+    },
+    "826": {
+      "name": "Britain",
+      "date": "2026-07-01",
+      "dollarPrice": 7.4,
+      "vsUsd": 0.1898,
+      "note": null
+    },
+    "840": {
+      "name": "United States",
+      "date": "2026-07-01",
+      "dollarPrice": 6.22,
+      "vsUsd": 0.0,
+      "note": null
+    },
+    "858": {
+      "name": "Uruguay",
+      "date": "2026-07-01",
+      "dollarPrice": 8.94,
+      "vsUsd": 0.437,
+      "note": null
+    },
+    "862": {
+      "name": "Venezuela",
+      "date": "2026-07-01",
+      "dollarPrice": 4.51,
+      "vsUsd": -0.2754,
+      "note": null
+    }
+  }
+}
