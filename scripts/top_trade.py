@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Compute each country's top export from a BACI trade file.
+"""Compute each country's top export and top import from a BACI trade file.
 
 Reads the raw BACI files in data/ (not committed) and writes a small JSON file
-the app serves: src/data/top-exports.json, keyed by the ISO 3166-1 numeric
+the app serves: src/data/top-trade.json, keyed by the ISO 3166-1 numeric
 code the map uses (zero-padded, e.g. "076" for Brazil).
 
 Usage:
-    python3 scripts/top_exports.py
-    python3 scripts/top_exports.py --trade data/BACI_HS17_Y2023_V202601.csv \
+    python3 scripts/top_trade.py
+    python3 scripts/top_trade.py --trade data/BACI_HS17_Y2023_V202601.csv \
         --products data/product_codes_HS17_V202601.csv \
         --countries data/country_codes_V202601.csv
 
@@ -20,13 +20,14 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import re
 import sys
 from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
-OUT = ROOT / "src" / "data" / "top-exports.json"
+OUT = ROOT / "src" / "data" / "top-trade.json"
 
 # BACI follows UN Comtrade's country codes, which match ISO numeric codes
 # except for these. 490 "Other Asia, nes" is Comtrade's code for Taiwan.
@@ -40,7 +41,7 @@ BACI_TO_ISO = {
 }
 NAME_OVERRIDES = {490: "Taiwan"}
 
-# Readable names for HS codes that come up as a top export (HS07 codes).
+# Readable names for HS codes that come up as a top export or import (HS07 codes).
 # Anything not listed falls back to short_label(); add entries here as needed.
 LABELS = {
     "270900": "Crude oil",
@@ -139,17 +140,42 @@ LABELS = {
     "680530": "Abrasives",
     "940180": "Seats",
     "970110": "Paintings",
+    # Top imports
+    "100190": "Wheat",
+    "100630": "Rice",
+    "100700": "Sorghum",
+    "110100": "Wheat flour",
+    "020714": "Frozen chicken",
+    "220300": "Beer",
+    "252329": "Cement",
+    "271112": "Propane",
+    "261400": "Titanium ore",
+    "870322": "Cars",
+    "870510": "Crane trucks",
+    "842930": "Earth-moving scrapers",
+    "860900": "Shipping containers",
+    "880211": "Helicopters",
+    "890120": "Tankers",
+    "890520": "Offshore drilling platforms",
+    "890590": "Floating cranes & special vessels",
+    "670300": "Hair for wigs",
+    "910121": "Watches",
 }
+
 
 def short_label(description: str) -> str:
     """Fallback label from an HS description.
 
     BACI descriptions read "Category: specific item, qualifiers (notes)", so take
-    the specific part:  "Fruit, edible: figs, fresh or dried" -> "Figs"
+    the specific part:  "Fruit, edible: figs, fresh or dried" -> "Figs".
+    Falls back to the category when the specific part is only notes.
     """
-    label = description.split(":", 1)[-1]
-    label = label.split("(")[0].split(";")[0].split(",")[0].strip()
-    return label[:1].upper() + label[1:]
+    category, _, specific = description.partition(":")
+    for part in (specific, category):
+        label = re.sub(r"\([^)]*\)", "", part).split(";")[0].split(",")[0].strip()
+        if label:
+            return label[:1].upper() + label[1:]
+    return ""
 
 
 def load_countries(path: Path) -> dict[int, dict]:
@@ -171,27 +197,48 @@ def load_products(path: Path) -> dict[str, str]:
     raise SystemExit(f"Could not decode {path}")
 
 
-def aggregate(path: Path) -> tuple[int, dict[int, dict[str, float]]]:
-    """Sum export value per (exporter, product) across all importers."""
-    totals: dict[int, dict[str, float]] = defaultdict(lambda: defaultdict(float))
+Totals = dict[int, dict[str, float]]
+
+
+def aggregate(path: Path) -> tuple[int, Totals, Totals]:
+    """Sum trade value per (country, product): once as exporter, once as importer."""
+    exports: Totals = defaultdict(lambda: defaultdict(float))
+    imports: Totals = defaultdict(lambda: defaultdict(float))
     year = None
     with path.open(newline="", encoding="utf-8") as f:
         reader = csv.reader(f)
         header = next(reader)
         col = {name: i for i, name in enumerate(header)}
-        ti, ii, ki, vi = col["t"], col["i"], col["k"], col["v"]
+        ti, ii, ji, ki, vi = col["t"], col["i"], col["j"], col["k"], col["v"]
         for n, row in enumerate(reader, 1):
             if year is None:
                 year = int(row[ti])
             try:
-                totals[int(row[ii])][row[ki].zfill(6)] += float(row[vi])
+                value = float(row[vi])
             except ValueError:
                 continue  # blank or malformed value
+            product = row[ki].zfill(6)
+            exports[int(row[ii])][product] += value
+            imports[int(row[ji])][product] += value
             if n % 2_000_000 == 0:
                 print(f"  {n:,} rows…", file=sys.stderr)
     if year is None:
         raise SystemExit(f"No rows in {path}")
-    return year, totals
+    return year, exports, imports
+
+
+def top_product(by_product: dict[str, float], products: dict[str, str]) -> tuple[dict, float]:
+    """The largest product (value in thousands of USD) and the country's total."""
+    hs, value = max(by_product.items(), key=lambda kv: kv[1])
+    total = sum(by_product.values())
+    description = products.get(hs, "")
+    return {
+        "hs": hs,
+        "label": LABELS.get(hs) or short_label(description) or hs,
+        "description": description,
+        "valueUsd": round(value * 1000),
+        "share": round(value / total, 4) if total else 0,
+    }, total
 
 
 def latest(pattern: str) -> Path:
@@ -214,30 +261,29 @@ def main() -> None:
     countries_path = args.countries or latest("country_codes_*.csv")
 
     print(f"Reading {trade.name}", file=sys.stderr)
-    year, totals = aggregate(trade)
+    year, exports, imports = aggregate(trade)
     products = load_products(products_path)
     countries = load_countries(countries_path)
 
     out: dict[str, dict] = {}
-    for baci_code, by_product in totals.items():
-        hs, value = max(by_product.items(), key=lambda kv: kv[1])
-        total = sum(by_product.values())
+    for baci_code in sorted(exports.keys() | imports.keys()):
         country = countries.get(baci_code, {"name": str(baci_code), "iso3": ""})
-        name = NAME_OVERRIDES.get(baci_code, country["name"])
-        description = products.get(hs, "")
-        iso = BACI_TO_ISO.get(baci_code, baci_code)
-        out[f"{iso:03d}"] = {
-            "name": name,
+        entry: dict = {
+            "name": NAME_OVERRIDES.get(baci_code, country["name"]),
             "iso3": country["iso3"],
-            "topExport": {
-                "hs": hs,
-                "label": LABELS.get(hs) or short_label(description) or hs,
-                "description": description,
-                "valueUsd": round(value * 1000),
-                "share": round(value / total, 4) if total else 0,
-            },
-            "totalExportsUsd": round(total * 1000),
+            "topExport": None,
+            "totalExportsUsd": 0,
+            "topImport": None,
+            "totalImportsUsd": 0,
         }
+        if exports.get(baci_code):
+            entry["topExport"], total = top_product(exports[baci_code], products)
+            entry["totalExportsUsd"] = round(total * 1000)
+        if imports.get(baci_code):
+            entry["topImport"], total = top_product(imports[baci_code], products)
+            entry["totalImportsUsd"] = round(total * 1000)
+        iso = BACI_TO_ISO.get(baci_code, baci_code)
+        out[f"{iso:03d}"] = entry
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     payload = {

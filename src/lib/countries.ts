@@ -1,28 +1,30 @@
 import world from "world-atlas/countries-50m.json";
 import type { Topology, GeometryCollection } from "topojson-specification";
 import { countryKeys } from "./countryKey";
-import topExports from "@/data/top-exports.json";
+import topTrade from "@/data/top-trade.json";
 
-export type TopExport = {
+/** A country's largest export or import product. */
+export type TopProduct = {
   hs: string;
   label: string;
-  /** Share of the country's total goods exports, 0–1. */
+  /** Share of the country's total goods exports (or imports), 0–1. */
   share: number;
   valueUsd: number;
 };
 
 export type CountryStats = {
   /** null for territories BACI has no data for. */
-  topExport: TopExport | null;
-  note2: number;
+  topExport: TopProduct | null;
+  topImport: TopProduct | null;
   note3: number;
 };
 
 /** Year and source of the trade data, for display. */
-export const tradeSource = { year: topExports.year, source: topExports.source };
+export const tradeSource = { year: topTrade.year, source: topTrade.source };
 
-type TopExportEntry = { name: string; topExport: TopExport & { description: string } };
-const exportsByIso = topExports.countries as Record<string, TopExportEntry>;
+type TradeProduct = TopProduct & { description: string };
+type TradeEntry = { name: string; topExport: TradeProduct | null; topImport: TradeProduct | null };
+const tradeByIso = topTrade.countries as Record<string, TradeEntry>;
 
 export type Country = {
   id: string;
@@ -47,11 +49,8 @@ function hash(str: string): number {
   return ((h >>> 0) % 100000) / 100000;
 }
 
-function fillerStats(key: string): Omit<CountryStats, "topExport"> {
-  return {
-    note2: Math.round(hash(`${key}:2`) * 1000) / 10,
-    note3: Math.round(hash(`${key}:3`) * 1_000_000),
-  };
+function fillerNote3(key: string): number {
+  return Math.round(hash(`${key}:3`) * 1_000_000);
 }
 
 /**
@@ -59,12 +58,17 @@ function fillerStats(key: string): Omit<CountryStats, "topExport"> {
  * code (Australia and Ashmore & Cartier Is. are both 036), only the one whose
  * name matches gets the data.
  */
-function lookupTopExport(id: string | number | undefined, key: string, name: string): TopExport | null {
+function lookupTrade(id: string | number | undefined, key: string, name: string): TradeEntry | null {
   if (id === undefined || id === "") return null;
-  const entry = exportsByIso[String(id)];
+  const entry = tradeByIso[String(id)];
   if (!entry) return null;
   if (key !== String(id) && entry.name !== name) return null;
-  const { hs, label, share, valueUsd } = entry.topExport;
+  return entry;
+}
+
+function pick(p: TradeProduct | null | undefined): TopProduct | null {
+  if (!p) return null;
+  const { hs, label, share, valueUsd } = p;
   return { hs, label, share, valueUsd };
 }
 
@@ -78,11 +82,18 @@ export function getCountries(): Country[] {
   }));
   const keys = countryKeys(geoms);
   cache = geoms
-    .map((g, i) => ({
-      id: keys[i],
-      name: g.name,
-      stats: { topExport: lookupTopExport(g.id, keys[i], g.name), ...fillerStats(keys[i]) },
-    }))
+    .map((g, i) => {
+      const trade = lookupTrade(g.id, keys[i], g.name);
+      return {
+        id: keys[i],
+        name: g.name,
+        stats: {
+          topExport: pick(trade?.topExport),
+          topImport: pick(trade?.topImport),
+          note3: fillerNote3(keys[i]),
+        },
+      };
+    })
     .sort((a, b) => a.name.localeCompare(b.name));
   return cache;
 }

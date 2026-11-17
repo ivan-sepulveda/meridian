@@ -8,7 +8,7 @@ import { zoom, zoomIdentity, type ZoomBehavior } from "d3-zoom";
 import { feature } from "topojson-client";
 import type { Topology, GeometryCollection } from "topojson-specification";
 import type { Feature, Geometry } from "geojson";
-import type { Country } from "@/lib/countries";
+import type { Country, TopProduct } from "@/lib/countries";
 import { countryKeys } from "@/lib/countryKey";
 
 const WIDTH = 960;
@@ -167,7 +167,7 @@ export default function WorldMap() {
 
         {hovered && hover && (
           <div
-            className="pointer-events-none absolute z-10 min-w-40 rounded-lg border border-[var(--border)] bg-[var(--panel)] px-3 py-2 text-xs shadow-lg"
+            className="pointer-events-none absolute z-10 w-max min-w-48 max-w-72 rounded-lg border border-[var(--border)] bg-[var(--panel)] px-3 py-2 text-xs shadow-lg"
             style={{
               left: hover.x + 14,
               top: hover.y + 14,
@@ -195,8 +195,8 @@ export default function WorldMap() {
             <h2 className="mb-4 text-xl font-semibold">{active.name}</h2>
             <StatRows country={active} large />
             <p className="mt-6 text-xs text-[var(--muted)]">
-              Top export: goods only{trade ? `, ${trade.year}, from ${trade.source}` : ""}. Note 2
-              and Note 3 are filler values.
+              Trade: goods only{trade ? `, ${trade.year}, from ${trade.source}` : ""}. Note 3 is a
+              filler value.
             </p>
           </>
         ) : (
@@ -210,26 +210,26 @@ export default function WorldMap() {
   );
 }
 
+function TradeValue({ product, of, large }: { product: TopProduct | null; of: string; large?: boolean }) {
+  if (!product) return <span className="text-[var(--muted)]">No data</span>;
+  return (
+    <>
+      {product.label}
+      {large && (
+        <div className="text-xs font-normal text-[var(--muted)]">
+          {formatShare(product.share)} of {of} · {formatUsd(product.valueUsd)}
+        </div>
+      )}
+    </>
+  );
+}
+
 function StatRows({ country, large }: { country: Country; large?: boolean }) {
-  const top = country.stats.topExport;
+  const { topExport, topImport, note3 } = country.stats;
   const rows: [string, React.ReactNode][] = [
-    [
-      "Top Export",
-      top ? (
-        <>
-          {top.label}
-          {large && (
-            <div className="text-xs font-normal text-[var(--muted)]">
-              {formatShare(top.share)} of exports · {formatUsd(top.valueUsd)}
-            </div>
-          )}
-        </>
-      ) : (
-        <span className="text-[var(--muted)]">No data</span>
-      ),
-    ],
-    ["Note 2", `${country.stats.note2.toFixed(1)}%`],
-    ["Note 3", country.stats.note3.toLocaleString()],
+    ["Top Export", <TradeValue key="e" product={topExport} of="exports" large={large} />],
+    ["Top Import", <TradeValue key="i" product={topImport} of="imports" large={large} />],
+    ["Note 3", note3.toLocaleString()],
   ];
   return (
     <dl className={large ? "space-y-3" : "space-y-0.5"}>
